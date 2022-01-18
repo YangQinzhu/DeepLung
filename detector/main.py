@@ -250,12 +250,12 @@ def train(data_loader, net, loss, epoch, optimizer, get_lr, save_freq, save_dir)
     end_time = time.time()
 
     for metrics_len in range(len(metrics)):
-        for metrics_len_len in range(metrics[metrics_len]):
+        for metrics_len_len in range(len(metrics[metrics_len])):
             if torch.is_tensor(metrics[metrics_len][metrics_len_len]):
                 metrics[metrics_len][metrics_len_len] = metrics[metrics_len][metrics_len_len].cpu().numpy()
             
     
-    print(metrics)
+    # print(metrics)
     
     metrics = np.asarray(metrics, np.float32)
     print('Epoch %03d (lr %.5f)' % (epoch, lr))
@@ -303,7 +303,7 @@ def validate(data_loader, net, loss):
     end_time = time.time()
 
     for metrics_len in range(len(metrics)):
-        for metrics_len_len in range(metrics[metrics_len]):
+        for metrics_len_len in range(len(metrics[metrics_len])):
             if torch.is_tensor(metrics[metrics_len][metrics_len_len]):
                 metrics[metrics_len][metrics_len_len] = metrics[metrics_len][metrics_len_len].cpu().numpy()
             
