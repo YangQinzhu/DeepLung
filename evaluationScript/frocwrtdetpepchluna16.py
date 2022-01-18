@@ -118,9 +118,9 @@ def getfrocvalue(results_filename):
 p = Pool(nprocess)
 def getcsv(detp, eps):
     for ep in eps:
-    	bboxpath = results_path + str(ep) + '/'
+        bboxpath = results_path + str(ep) + '/'
         for detpthresh in detp:
-            print 'ep', ep, 'detp', detpthresh
+            print('ep', ep, 'detp', detpthresh)
             f = open(bboxpath + 'predanno'+ str(detpthresh) + 'd3.csv', 'w')
             fwriter = csv.writer(f)
             fwriter.writerow(firstline)
@@ -146,7 +146,7 @@ def getfroc(detp, eps):
     maxfroc = 0
     maxep = 0
     for ep in eps:
-    	bboxpath = results_path + str(ep) + '/'
+        bboxpath = results_path + str(ep) + '/'
         predannofnamalist = []
         for detpthresh in detp:
             predannofnamalist.append(bboxpath + 'predanno'+ str(detpthresh) + '.csv')
@@ -154,13 +154,13 @@ def getfroc(detp, eps):
         if maxfroc < max(froclist):
             maxep = ep
             maxfroc = max(froclist)
-        print froclist
+        print(froclist)
         for detpthresh in detp:
             # print len(froclist), int((detpthresh-detp[0])/(detp[1]-detp[0]))
             frocarr[(ep-eps[0])/(eps[1]-eps[0]), int((detpthresh-detp[0])/(detp[1]-detp[0]))] = \
                 froclist[int((detpthresh-detp[0])/(detp[1]-detp[0]))]
-            print 'ep', ep, 'detp', detpthresh, froclist[int((detpthresh-detp[0])/(detp[1]-detp[0]))]
-    print maxfroc, maxep
+            print('ep', ep, 'detp', detpthresh, froclist[int((detpthresh-detp[0])/(detp[1]-detp[0]))])
+    print(maxfroc, maxep)
 getfroc(detp, eps)
 p.close()
 fig = plt.imshow(frocarr.T)
@@ -176,9 +176,9 @@ plt.savefig(results_path+'frocavg.png')
 np.save(results_path+'frocavg.npy', frocarr)
 frocarr = np.load(results_path+'frocavg.npy', 'r')
 froc, x, y = 0, 0, 0
-for i in xrange(frocarr.shape[0]):
-    for j in xrange(frocarr.shape[1]):
+for i in range(frocarr.shape[0]):
+    for j in range(frocarr.shape[1]):
         if froc < frocarr[i,j]:
             froc, x, y = frocarr[i,j], i, j
-print fold, froc, x, y
+print(fold, froc, x, y)
 # print maxfroc

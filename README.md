@@ -1,4 +1,4 @@
- # Deeplung 
+# Detection 
  This is a refine version of DeepLung repo with dependecies:
  * python 3.7
  * pytorch 1.10
@@ -18,6 +18,19 @@
 ```
 sh run_training.sh 
 ```
+## Done
+- [x] torch version problem
+- [x] data path
+- [x] numpy version problem (1.21.5 with problem of np.asarray(metrics))
 
-## Classification 
-- [ ] need to do
+# Classification 
+- [x]  fix the error loading file with xlrd  : /data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/list3.2.csv
+
+## PrepareData
+1. change `.dcm` file name, such as `1-001.dcm` to `0000001.dcm`
+2. run `./nodcls/data/extclsshpinfo.py`
+3. run `/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/dataconverter.py` to get file `annotationdetclsconv_v3.csv`
+4. run `/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/nodclsgbt.py` to generate folder `/luna16/cls/crop_v3/`
+5. run `main_nodcls.py`
+
+___you can change the path as you need, I have listed them it front of the function in each python file___

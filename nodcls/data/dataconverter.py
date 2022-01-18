@@ -4,6 +4,15 @@ import pandas as pd
 import SimpleITK as sitk
 import os
 import os.path
+
+###################
+rawpath = '/data/yangqinzhu/ctLung/luna16/lunaall/'
+preprocesspath = '/data/yangqinzhu/ctLung/luna16/preprocess/lunaall/'
+annotationdetclsconv_v3 = '/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/annotationdetclsconv_v3.csv'
+annotationdetclsgt_csv = '/data/yangqinzhu/ctLung/DeepLung-master/nodcls/annotationdetclssgm_doctor.csv'
+
+####################
+
 def load_itk_image(filename):
     with open(filename) as f:
         contents = f.readlines()
@@ -25,7 +34,8 @@ def worldToVoxelCoord(worldCoord, origin, spacing):
     return voxelCoord
 # read groundtruth from original data space
 # remove data of 0 value
-pdframe = pd.read_csv('annotationdetclsgt.csv', names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
+# pdframe = pd.read_csv('annotationdetclsgt.csv', names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
+pdframe = pd.read_csv(annotationdetclsgt_csv, names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = pdframe['seriesuid'].tolist()[1:]
 crdxlst = pdframe['coordX'].tolist()[1:]
 crdylst = pdframe['coordY'].tolist()[1:]
@@ -33,7 +43,7 @@ crdzlst = pdframe['coordZ'].tolist()[1:]
 dimlst = pdframe['diameter_mm'].tolist()[1:]
 mlglst = pdframe['malignant'].tolist()[1:]
 dct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     # if mlglst[idx] == '0':
     #     continue
     assert mlglst[idx] in ['1', '0']
@@ -44,8 +54,7 @@ for idx in xrange(len(srslst)):
         dct[srslst[idx]] = [vlu]
 # convert it to the preprocessed space
 newlst = []
-rawpath = '/media/data1/wentao/tianchi/luna16/lunaall/'
-preprocesspath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+
 resolution = np.array([1,1,1])
 def process(pid):
     # print pid
@@ -95,11 +104,11 @@ print(len(dct.keys()), len(newlst))
 #         label2 = label2[:4].T
 #         newlst.append([pid, label2[0,0], label2[0,1], label2[0,2], label2[0,3], vlu[-1]])
 # save it to the csv
-savecsv = 'annotationdetclsconv_v3.csv'
+savecsv = annotationdetclsconv_v3
 fid = open(savecsv, 'w')
 writer = csv.writer(fid)
 writer.writerow(['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
-for idx in xrange(len(newlst)):
-    for subidx in xrange(len(newlst[idx])):
+for idx in range(len(newlst)):
+    for subidx in range(len(newlst[idx])):
         writer.writerow(newlst[idx][subidx])
 fid.close()

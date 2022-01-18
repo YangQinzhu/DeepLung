@@ -58,16 +58,25 @@ class lunanod(data.Dataset):
             self.test_labels = []
             self.test_feat = featlst
             for label, fentry in zip(labellst, fnamelst):
-                if fentry.shape[0] != 32 or fentry.shape[1] != 32 or fentry.shape[2] != 32:
-                    print(fentry.shape, type(fentry), type(fentry)!='str')
-                if type(fentry) != 'str':
-                    self.test_data.append(fentry)
-                    self.test_labels.append(label)
-                    # print('1')
-                else:
-                    file = os.path.join(npypath, fentry)
-                    self.test_data.append(np.load(file))
-                    self.test_labels.append(label)
+                ###
+                # file = os.path.join(npypath, fentry)
+                # fentry = np.load(file)
+                ###
+                # if fentry.shape[0] != 32 or fentry.shape[1] != 32 or fentry.shape[2] != 32:
+                #     print(fentry.shape, type(fentry), type(fentry)!='str')
+                
+                # if type(fentry) != 'str':
+                #     self.test_data.append(fentry)
+                #     self.test_labels.append(label)
+                #     # print('1')
+                # else:
+                #     file = os.path.join(npypath, fentry)
+                #     self.test_data.append(np.load(file))
+                #     self.test_labels.append(label)
+                
+                file = os.path.join(npypath, fentry)
+                self.test_data.append(np.load(file))
+                self.test_labels.append(label)
             self.test_data = np.concatenate(self.test_data)
             # print(self.test_data.shape)
             self.test_data = self.test_data.reshape((len(fnamelst), 32, 32, 32))

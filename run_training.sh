@@ -7,7 +7,8 @@ maxeps=150
 f=9
 # CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --model res18 -b 64 --resume 064.ckpt --save-dir res18/retrft96$f/ --epochs $maxeps --config config_training$f
 # CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --model res18 -b 64 --resume 064.ckpt --save-dir res18/retrft96$f/ --epochs $maxeps --config config_training$f
-CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --model res18 -b 32 --resume 064.ckpt --save-dir res18/retrft96$f/ --epochs $maxeps --config config_training$f
+# CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --model res18 -b 32 --resume 064.ckpt --save-dir res18/retrft96$f/ --epochs $maxeps --config config_training$f
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --model res18 -b 16 --resume 064.ckpt --save-dir res18/retrft96$f/ --epochs $maxeps --config config_training$f
 for (( i=1; i<=$maxeps; i+=1)) 
 do
     echo "process $i epoch"

@@ -75,23 +75,23 @@ class DPN(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x):
-        if debug: print '0', x.size(), 64
+        if debug: print('0', x.size(), 64)
         out = F.relu(self.bn1(self.conv1(x)))
-        if debug: print '1', out.size()
+        if debug: print('1', out.size())
         out = self.layer1(out)
-        if debug: print '2', out.size()
+        if debug: print('2', out.size())
         out = self.layer2(out)
-        if debug: print '3', out.size()
+        if debug: print('3', out.size())
         out = self.layer3(out)
-        if debug: print '4', out.size()
+        if debug: print('4', out.size())
         out = self.layer4(out)
-        if debug: print '5', out.size()
+        if debug: print('5', out.size())
         out = F.avg_pool3d(out, 4)
-        if debug: print '6', out.size()
+        if debug: print('6', out.size())
         out_1 = out.view(out.size(0), -1)
-        if debug: print '7', out_1.size()
+        if debug: print('7', out_1.size())
         out = self.linear(out_1)
-        if debug: print '8', out.size()
+        if debug: print('8', out.size())
         return out, out_1
 
 

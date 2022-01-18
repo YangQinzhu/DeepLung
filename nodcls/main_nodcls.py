@@ -13,14 +13,25 @@ import transforms as transforms
 import os
 import argparse
 
-from models import *
+from models import dpn3d
 from utils import progress_bar
 from torch.autograd import Variable
 import logging
 import numpy as np
 CROPSIZE = 17
 gbtdepth = 1
-fold = 5
+fold = 9
+
+
+##############################
+annotationdetclsconvfnl_v3 = '/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/annotationdetclsconvfnl_v3.csv'
+LUNA_SUBSET = '/data/yangqinzhu/ctLung/luna16/subset'
+preprocesspath = '/data/yangqinzhu/ctLung/luna16/cls/crop_v3/'
+# preprocessallpath = '/data/yangqinzhu/ctLung/luna16/preprocess/lunaall/'
+##############################
+
+
+
 blklst = []#['1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-388', \
     # '1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-389', \
     # '1.3.6.1.4.1.14519.5.2.1.6279.6001.132817748896065918417924920957-660']
@@ -35,7 +46,9 @@ best_acc = 0  # best test accuracy
 best_acc_gbt = 0
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 # Cal mean std
-preprocesspath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
+
+
+
 pixvlu, npix = 0, 0
 for fname in os.listdir(preprocesspath):
     if fname.endswith('.npy'):
@@ -80,7 +93,9 @@ tefnamelst = []
 telabellst = []
 tefeatlst = []
 import pandas as pd
-dataframe = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+# dataframe = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+#                         names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
+dataframe = pd.read_csv(annotationdetclsconvfnl_v3, \
                         names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 alllst = dataframe['seriesuid'].tolist()[1:]
 labellst = dataframe['malignant'].tolist()[1:]
@@ -90,7 +105,8 @@ crdzlst = dataframe['coordZ'].tolist()[1:]
 dimlst = dataframe['diameter_mm'].tolist()[1:]
 # test id
 teidlst = []
-for fname in os.listdir('/media/data1/wentao/tianchi/luna16/subset'+str(fold)+'/'):
+# for fname in os.listdir('/media/data1/wentao/tianchi/luna16/subset'+str(fold)+'/'):
+for fname in os.listdir(LUNA_SUBSET+str(fold)+'/'):
     if fname.endswith('.mhd'):
         teidlst.append(fname[:-4])
 mxx = mxy = mxz = mxd = 0
@@ -105,7 +121,7 @@ for srsid, label, x, y, z, d in zip(alllst, labellst, crdxlst, crdylst, crdzlst,
     bgx = data.shape[0]/2-CROPSIZE/2
     bgy = data.shape[1]/2-CROPSIZE/2
     bgz = data.shape[2]/2-CROPSIZE/2
-    data = np.array(data[bgx:bgx+CROPSIZE, bgy:bgy+CROPSIZE, bgz:bgz+CROPSIZE])
+    data = np.array(data[int(bgx):int(bgx+CROPSIZE), int(bgy):int(bgy+CROPSIZE), int(bgz):int(bgz+CROPSIZE)])
     feat = np.hstack((np.reshape(data, (-1,)) / 255, float(d)))
     # print(feat.shape)
     if srsid.split('-')[0] in teidlst:
@@ -116,20 +132,22 @@ for srsid, label, x, y, z, d in zip(alllst, labellst, crdxlst, crdylst, crdzlst,
         trfnamelst.append(srsid+'.npy')
         trlabellst.append(int(label))
         trfeatlst.append(feat)
-for idx in xrange(len(trfeatlst)):
+for idx in range(len(trfeatlst)):
     # trfeatlst[idx][0] /= mxx
     # trfeatlst[idx][1] /= mxy
     # trfeatlst[idx][2] /= mxz
     trfeatlst[idx][-1] /= mxd
-for idx in xrange(len(tefeatlst)):
+for idx in range(len(tefeatlst)):
     # tefeatlst[idx][0] /= mxx
     # tefeatlst[idx][1] /= mxy
     # tefeatlst[idx][2] /= mxz
     tefeatlst[idx][-1] /= mxd
-trainset = lunanod(trfnamelst, trlabellst, trfeatlst, train=True, download=True, transform=transform_train)
+trainset = lunanod(preprocesspath, trfnamelst, trlabellst, trfeatlst, train=True, download=True, transform=transform_train)
+# trainset = lunanod(trfnamelst, trlabellst, trfeatlst, train=True, download=True, transform=transform_train)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=16, shuffle=True, num_workers=30)
 
-testset = lunanod(tefnamelst, telabellst, tefeatlst, train=False, download=True, transform=transform_test)
+testset = lunanod(preprocesspath, tefnamelst, telabellst, tefeatlst, train=False, download=True, transform=transform_test)
+# testset = lunanod(tefnamelst, telabellst, tefeatlst, train=False, download=True, transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=16, shuffle=False, num_workers=30)
 savemodelpath = './checkpoint-'+str(fold)+'/'
 # Model
@@ -149,7 +167,7 @@ else:
     # net = DenseNet121()
     # net = ResNeXt29_2x64d()
     # net = MobileNet()
-    net = DPN92_3D()
+    net = dpn3d.DPN92_3D()
     # net = ShuffleNetG2()
 neptime = 2
 def get_lr(epoch):
@@ -187,7 +205,7 @@ def train(epoch):
             # print(len(inputs), len(targets), len(feat), type(inputs[0]), type(targets[0]), type(feat[0]))
             # print(type(targets), type(inputs), len(targets))
             # targetarr = np.zeros((len(targets),))
-            # for idx in xrange(len(targets)):
+            # for idx in range(len(targets)):
                 # targetarr[idx] = targets[idx]
             # print((Variable(torch.from_numpy(targetarr)).data).cpu().numpy().shape)
             inputs, targets = inputs.cuda(), targets.cuda()
@@ -198,7 +216,7 @@ def train(epoch):
         # print(torch.stack(targets).data.numpy().shape, torch.stack(feat).data.numpy().shape)
         # print((dfeat.data).cpu().numpy().shape)
         trainfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
-        for i in xrange(len(targets)):
+        for i in range(len(targets)):
             trainfeat[idx+i, 2560:] = np.array((Variable(feat[i]).data).cpu().numpy())
             trainlabel[idx+i] = np.array((targets[i].data).cpu().numpy())
         idx += len(targets)
@@ -206,7 +224,7 @@ def train(epoch):
         loss = criterion(outputs, targets)
         loss.backward()
         optimizer.step()
-        train_loss += loss.data[0]
+        train_loss += loss.item()
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
@@ -236,13 +254,13 @@ def test(epoch, m):
         outputs, dfeat = net(inputs)
         # add feature into the array
         testfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
-        for i in xrange(len(targets)):
+        for i in range(len(targets)):
             testfeat[idx+i, 2560:] = np.array((Variable(feat[i]).data).cpu().numpy())
             testlabel[idx+i] = np.array((targets[i].data).cpu().numpy())
         idx += len(targets)
 
         loss = criterion(outputs, targets)
-        test_loss += loss.data[0]
+        test_loss += loss.item()
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
@@ -290,5 +308,7 @@ def test(epoch, m):
     logging.info('teacc '+str(acc)+' bestacc '+str(best_acc)+' ccgbt '+str(gbtteacc)+' bestgbt '+str(best_acc_gbt))
 
 for epoch in range(start_epoch, start_epoch+350*neptime):#200):
+    print('epoch =======================>', epoch)
     m = train(epoch)
     test(epoch, m)
+    print('finish.')

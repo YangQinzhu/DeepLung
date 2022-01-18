@@ -32250,4 +32250,1106 @@ Validation: tpr 98.34, tnr 99.99758627, total pos 181, total neg 7415896, time 3
 loss 0.0269, classify loss 0.0268, regress loss 0.0000, 0.0000, 0.0000, 0.0000
 Epoch 022 (lr 0.01000)
 Train:      tpr 98.75, tnr 98.93, total pos 1767, total neg 5048, time 112.68
-loss 0.0426, classify loss 0.0425, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+loss 0.0426, classify loss 0.0425, regress loss 0.0000, 0.0000, 0.0000, 0.0000using gpu 
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f5256cb8b90> <class 'int'> <class 'int'>
+88
+Epoch 001 (lr 0.01000)
+Train:      tpr 95.13, tnr 96.55, total pos 1767, total neg 5048, time 334.96
+loss 0.1517, classify loss 0.1437, regress loss 0.0008, 0.0006, 0.0007, 0.0059
+Validation: tpr 97.79, tnr 99.99745161, total pos 181, total neg 7416435, time 6.72
+loss 0.0322, classify loss 0.0315, regress loss 0.0001, 0.0001, 0.0002, 0.0004
+Epoch 002 (lr 0.01000)
+Train:      tpr 97.00, tnr 97.92, total pos 1767, total neg 5048, time 316.06
+loss 0.0904, classify loss 0.0884, regress loss 0.0003, 0.0002, 0.0002, 0.0013
+Validation: tpr 97.24, tnr 99.98991324, total pos 181, total neg 7415662, time 6.51
+loss 0.0589, classify loss 0.0575, regress loss 0.0002, 0.0002, 0.0001, 0.0009
+Epoch 003 (lr 0.01000)
+Train:      tpr 96.94, tnr 97.98, total pos 1767, total neg 5048, time 317.28
+loss 0.1017, classify loss 0.1006, regress loss 0.0002, 0.0001, 0.0001, 0.0007
+Validation: tpr 95.58, tnr 99.99753230, total pos 181, total neg 7415821, time 6.63
+loss 0.0880, classify loss 0.0876, regress loss 0.0000, 0.0000, 0.0000, 0.0002
+Epoch 004 (lr 0.01000)
+Train:      tpr 96.38, tnr 97.86, total pos 1767, total neg 5048, time 315.55
+loss 0.0930, classify loss 0.0924, regress loss 0.0001, 0.0001, 0.0001, 0.0003
+Validation: tpr 97.24, tnr 99.99173476, total pos 181, total neg 7416604, time 7.18
+loss 0.0272, classify loss 0.0268, regress loss 0.0000, 0.0001, 0.0001, 0.0002
+Epoch 005 (lr 0.01000)
+Train:      tpr 97.68, tnr 98.24, total pos 1767, total neg 5048, time 317.80
+loss 0.0809, classify loss 0.0800, regress loss 0.0001, 0.0001, 0.0002, 0.0004
+Validation: tpr 98.34, tnr 99.99209901, total pos 181, total neg 7416791, time 6.57
+loss 0.0431, classify loss 0.0415, regress loss 0.0003, 0.0002, 0.0007, 0.0002
+Epoch 006 (lr 0.01000)
+Train:      tpr 97.57, tnr 98.40, total pos 1767, total neg 5048, time 317.43
+loss 0.0729, classify loss 0.0708, regress loss 0.0007, 0.0001, 0.0005, 0.0008
+Validation: tpr 95.58, tnr 99.99285369, total pos 181, total neg 7416412, time 6.67
+loss 0.0573, classify loss 0.0461, regress loss 0.0045, 0.0001, 0.0032, 0.0035
+Epoch 007 (lr 0.01000)
+Train:      tpr 97.40, tnr 97.90, total pos 1767, total neg 5048, time 315.54
+loss 0.0814, classify loss 0.0801, regress loss 0.0003, 0.0001, 0.0002, 0.0006
+Validation: tpr 97.24, tnr 99.99548280, total pos 181, total neg 7416097, time 6.59
+loss 0.0416, classify loss 0.0408, regress loss 0.0002, 0.0000, 0.0000, 0.0006
+Epoch 008 (lr 0.01000)
+Train:      tpr 97.34, tnr 98.42, total pos 1767, total neg 5048, time 316.51
+loss 0.0781, classify loss 0.0779, regress loss 0.0001, 0.0000, 0.0001, 0.0001
+Validation: tpr 96.69, tnr 99.99460603, total pos 181, total neg 7415694, time 6.90
+loss 0.0426, classify loss 0.0425, regress loss 0.0000, 0.0001, 0.0000, 0.0001
+Epoch 009 (lr 0.01000)
+Train:      tpr 96.94, tnr 98.26, total pos 1767, total neg 5048, time 313.64
+loss 0.0843, classify loss 0.0835, regress loss 0.0002, 0.0001, 0.0003, 0.0002
+Validation: tpr 91.71, tnr 99.99882699, total pos 181, total neg 7416839, time 6.81
+loss 0.1163, classify loss 0.1149, regress loss 0.0005, 0.0000, 0.0005, 0.0004
+Epoch 010 (lr 0.01000)
+Train:      tpr 97.79, tnr 98.44, total pos 1767, total neg 5048, time 316.64
+loss 0.0699, classify loss 0.0682, regress loss 0.0005, 0.0001, 0.0007, 0.0004
+Validation: tpr 96.13, tnr 99.99788290, total pos 181, total neg 7415811, time 6.93
+loss 0.0865, classify loss 0.0859, regress loss 0.0000, 0.0000, 0.0001, 0.0005
+Epoch 011 (lr 0.01000)
+Train:      tpr 97.62, tnr 98.26, total pos 1767, total neg 5048, time 320.03
+loss 0.0795, classify loss 0.0793, regress loss 0.0000, 0.0000, 0.0001, 0.0001
+Validation: tpr 96.69, tnr 99.99737068, total pos 181, total neg 7416368, time 7.00
+loss 0.0320, classify loss 0.0319, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 012 (lr 0.01000)
+Train:      tpr 98.25, tnr 98.59, total pos 1767, total neg 5048, time 317.99
+loss 0.0578, classify loss 0.0577, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Validation: tpr 95.58, tnr 99.99846291, total pos 181, total neg 7416605, time 6.72
+loss 0.0650, classify loss 0.0647, regress loss 0.0002, 0.0000, 0.0000, 0.0000
+Epoch 013 (lr 0.01000)
+Train:      tpr 97.79, tnr 98.51, total pos 1767, total neg 5048, time 318.35
+loss 0.0655, classify loss 0.0652, regress loss 0.0001, 0.0001, 0.0000, 0.0002
+Validation: tpr 97.24, tnr 99.99459306, total pos 181, total neg 7416390, time 6.62
+loss 0.0318, classify loss 0.0317, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Epoch 014 (lr 0.01000)
+Train:      tpr 98.25, tnr 98.71, total pos 1767, total neg 5048, time 317.64
+loss 0.0594, classify loss 0.0590, regress loss 0.0000, 0.0001, 0.0001, 0.0003
+Validation: tpr 96.13, tnr 99.99774807, total pos 181, total neg 7415860, time 6.89
+loss 0.0556, classify loss 0.0555, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Epoch 015 (lr 0.01000)
+Train:      tpr 98.02, tnr 98.53, total pos 1767, total neg 5048, time 316.52
+loss 0.0626, classify loss 0.0624, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Validation: tpr 97.79, tnr 99.99487658, total pos 181, total neg 7416923, time 6.61
+loss 0.0443, classify loss 0.0443, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 016 (lr 0.01000)
+Train:      tpr 97.62, tnr 98.34, total pos 1767, total neg 5048, time 317.06
+loss 0.0709, classify loss 0.0708, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99669674, total pos 181, total neg 7416922, time 6.55
+loss 0.0270, classify loss 0.0269, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Epoch 017 (lr 0.01000)
+Train:      tpr 97.85, tnr 98.53, total pos 1767, total neg 5048, time 316.19
+loss 0.0641, classify loss 0.0640, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Validation: tpr 97.79, tnr 99.99573930, total pos 181, total neg 7416618, time 6.51
+loss 0.0302, classify loss 0.0302, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 018 (lr 0.01000)
+Train:      tpr 97.85, tnr 98.57, total pos 1767, total neg 5048, time 317.14
+loss 0.0593, classify loss 0.0591, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 99.45, tnr 99.99627852, total pos 181, total neg 7416402, time 6.58
+loss 0.0181, classify loss 0.0180, regress loss 0.0001, 0.0000, 0.0000, 0.0000
+Epoch 019 (lr 0.01000)
+Train:      tpr 98.47, tnr 98.73, total pos 1767, total neg 5048, time 316.55
+loss 0.0556, classify loss 0.0553, regress loss 0.0002, 0.0001, 0.0001, 0.0001
+Validation: tpr 98.34, tnr 99.99727639, total pos 181, total neg 7416615, time 6.61
+loss 0.0235, classify loss 0.0235, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 020 (lr 0.01000)
+Train:      tpr 98.08, tnr 98.63, total pos 1767, total neg 5048, time 317.83
+loss 0.0613, classify loss 0.0609, regress loss 0.0000, 0.0001, 0.0001, 0.0001
+Validation: tpr 98.34, tnr 99.99820683, total pos 181, total neg 7417041, time 6.68
+loss 0.0283, classify loss 0.0280, regress loss 0.0000, 0.0000, 0.0003, 0.0000
+Epoch 021 (lr 0.01000)
+Train:      tpr 98.30, tnr 98.69, total pos 1767, total neg 5048, time 318.46
+loss 0.0556, classify loss 0.0514, regress loss 0.0000, 0.0007, 0.0035, 0.0000
+Validation: tpr 98.34, tnr 99.99673736, total pos 181, total neg 7417301, time 6.87
+loss 0.0375, classify loss 0.0375, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 022 (lr 0.01000)
+Train:      tpr 98.13, tnr 98.81, total pos 1767, total neg 5048, time 317.78
+loss 0.0537, classify loss 0.0535, regress loss 0.0000, 0.0000, 0.0001, 0.0000
+Validation: tpr 98.34, tnr 99.99514639, total pos 181, total neg 7417164, time 6.38
+loss 0.0323, classify loss 0.0323, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 023 (lr 0.01000)
+Train:      tpr 98.19, tnr 98.65, total pos 1767, total neg 5048, time 317.40
+loss 0.0543, classify loss 0.0542, regress loss 0.0000, 0.0000, 0.0001, 0.0000
+Validation: tpr 97.79, tnr 99.99537527, total pos 181, total neg 7416642, time 6.45
+loss 0.0244, classify loss 0.0243, regress loss 0.0001, 0.0000, 0.0000, 0.0000
+Epoch 024 (lr 0.01000)
+Train:      tpr 98.30, tnr 98.81, total pos 1767, total neg 5048, time 318.24
+loss 0.0497, classify loss 0.0494, regress loss 0.0000, 0.0001, 0.0001, 0.0002
+Validation: tpr 99.45, tnr 99.99335268, total pos 181, total neg 7416525, time 6.94
+loss 0.0148, classify loss 0.0148, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 025 (lr 0.01000)
+Train:      tpr 97.79, tnr 98.24, total pos 1767, total neg 5048, time 318.26
+loss 0.0701, classify loss 0.0699, regress loss 0.0000, 0.0000, 0.0001, 0.0000
+Validation: tpr 95.03, tnr 99.99862460, total pos 181, total neg 7416035, time 6.56
+loss 0.0617, classify loss 0.0613, regress loss 0.0000, 0.0000, 0.0002, 0.0000
+Epoch 026 (lr 0.01000)
+Train:      tpr 98.36, tnr 98.85, total pos 1767, total neg 5048, time 317.56
+loss 0.0467, classify loss 0.0465, regress loss 0.0000, 0.0000, 0.0001, 0.0001
+Validation: tpr 98.90, tnr 99.99549626, total pos 181, total neg 7416054, time 7.03
+loss 0.0143, classify loss 0.0143, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 027 (lr 0.01000)
+Train:      tpr 98.59, tnr 98.75, total pos 1767, total neg 5048, time 318.04
+loss 0.0503, classify loss 0.0483, regress loss 0.0002, 0.0016, 0.0000, 0.0002
+Validation: tpr 97.79, tnr 99.99873259, total pos 181, total neg 7416703, time 6.83
+loss 0.0410, classify loss 0.0410, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 028 (lr 0.01000)
+Train:      tpr 98.36, tnr 98.73, total pos 1767, total neg 5048, time 318.43
+loss 0.0508, classify loss 0.0506, regress loss 0.0000, 0.0001, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99136990, total pos 181, total neg 7415909, time 6.77
+loss 0.0265, classify loss 0.0259, regress loss 0.0001, 0.0004, 0.0000, 0.0001
+Epoch 029 (lr 0.01000)
+Train:      tpr 98.98, tnr 99.13, total pos 1767, total neg 5048, time 319.59
+loss 0.0373, classify loss 0.0372, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99491689, total pos 181, total neg 7416714, time 7.02
+loss 0.0161, classify loss 0.0160, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 030 (lr 0.01000)
+Train:      tpr 98.47, tnr 98.67, total pos 1767, total neg 5048, time 320.47
+loss 0.0476, classify loss 0.0473, regress loss 0.0000, 0.0001, 0.0001, 0.0000
+Validation: tpr 97.79, tnr 99.99730289, total pos 181, total neg 7415332, time 6.77
+loss 0.0308, classify loss 0.0305, regress loss 0.0000, 0.0001, 0.0001, 0.0000
+Epoch 031 (lr 0.01000)
+Train:      tpr 98.42, tnr 98.79, total pos 1767, total neg 5048, time 317.88
+loss 0.0431, classify loss 0.0415, regress loss 0.0009, 0.0002, 0.0001, 0.0004
+Validation: tpr 98.34, tnr 99.99452568, total pos 181, total neg 7416440, time 6.60
+loss 0.0398, classify loss 0.0376, regress loss 0.0012, 0.0002, 0.0002, 0.0006
+Epoch 032 (lr 0.01000)
+Train:      tpr 98.53, tnr 98.97, total pos 1767, total neg 5048, time 317.77
+loss 0.0411, classify loss 0.0402, regress loss 0.0004, 0.0001, 0.0001, 0.0003
+Validation: tpr 98.90, tnr 99.99749250, total pos 181, total neg 7417744, time 6.87
+loss 0.0121, classify loss 0.0107, regress loss 0.0007, 0.0001, 0.0001, 0.0005
+Epoch 033 (lr 0.01000)
+Train:      tpr 98.53, tnr 98.79, total pos 1767, total neg 5048, time 318.09
+loss 0.0479, classify loss 0.0475, regress loss 0.0001, 0.0001, 0.0001, 0.0001
+Validation: tpr 96.69, tnr 99.99838198, total pos 181, total neg 7416475, time 6.52
+loss 0.0509, classify loss 0.0508, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 034 (lr 0.01000)
+Train:      tpr 98.81, tnr 99.07, total pos 1767, total neg 5048, time 316.81
+loss 0.0402, classify loss 0.0401, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99595535, total pos 181, total neg 7417202, time 6.48
+loss 0.0243, classify loss 0.0241, regress loss 0.0001, 0.0000, 0.0000, 0.0000
+Epoch 035 (lr 0.01000)
+Train:      tpr 98.53, tnr 98.73, total pos 1767, total neg 5048, time 318.09
+loss 0.0527, classify loss 0.0511, regress loss 0.0009, 0.0003, 0.0000, 0.0004
+Validation: tpr 97.79, tnr 99.99750575, total pos 181, total neg 7417049, time 6.98
+loss 0.0304, classify loss 0.0304, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 036 (lr 0.01000)
+Train:      tpr 98.64, tnr 98.38, total pos 1767, total neg 5048, time 318.26
+loss 0.0508, classify loss 0.0508, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99603681, total pos 181, total neg 7418259, time 6.72
+loss 0.0582, classify loss 0.0581, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 037 (lr 0.01000)
+Train:      tpr 99.09, tnr 99.33, total pos 1767, total neg 5048, time 254.55
+loss 0.0352, classify loss 0.0342, regress loss 0.0002, 0.0001, 0.0004, 0.0002
+Validation: tpr 97.79, tnr 99.99216588, total pos 181, total neg 7416273, time 3.89
+loss 0.0476, classify loss 0.0408, regress loss 0.0017, 0.0007, 0.0030, 0.0013
+Epoch 038 (lr 0.01000)
+Train:      tpr 98.87, tnr 99.25, total pos 1767, total neg 5048, time 138.42
+loss 0.0337, classify loss 0.0326, regress loss 0.0002, 0.0003, 0.0003, 0.0002
+Validation: tpr 97.24, tnr 99.98925436, total pos 181, total neg 7416961, time 4.45
+loss 0.0518, classify loss 0.0511, regress loss 0.0000, 0.0004, 0.0001, 0.0002
+Epoch 039 (lr 0.01000)
+Train:      tpr 98.30, tnr 98.47, total pos 1767, total neg 5048, time 139.29
+loss 0.0489, classify loss 0.0486, regress loss 0.0000, 0.0002, 0.0000, 0.0001
+Validation: tpr 96.13, tnr 99.99739758, total pos 181, total neg 7416163, time 4.32
+loss 0.1075, classify loss 0.1075, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 040 (lr 0.01000)
+Train:      tpr 98.87, tnr 98.91, total pos 1767, total neg 5048, time 137.90
+loss 0.0382, classify loss 0.0381, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Validation: tpr 97.79, tnr 99.99575280, total pos 181, total neg 7416646, time 3.80
+loss 0.0505, classify loss 0.0504, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 041 (lr 0.01000)
+Train:      tpr 98.64, tnr 98.67, total pos 1767, total neg 5048, time 139.38
+loss 0.0439, classify loss 0.0437, regress loss 0.0000, 0.0002, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99635913, total pos 181, total neg 7415819, time 3.88
+loss 0.0276, classify loss 0.0263, regress loss 0.0000, 0.0010, 0.0000, 0.0002
+Epoch 042 (lr 0.01000)
+Train:      tpr 98.98, tnr 98.97, total pos 1767, total neg 5048, time 138.65
+loss 0.0384, classify loss 0.0358, regress loss 0.0000, 0.0021, 0.0001, 0.0004
+Validation: tpr 95.58, tnr 99.99805844, total pos 181, total neg 7416698, time 4.13
+loss 0.1565, classify loss 0.1542, regress loss 0.0000, 0.0018, 0.0002, 0.0004
+Epoch 043 (lr 0.01000)
+Train:      tpr 98.70, tnr 98.69, total pos 1767, total neg 5048, time 137.98
+loss 0.0506, classify loss 0.0504, regress loss 0.0000, 0.0001, 0.0000, 0.0000
+Validation: tpr 95.58, tnr 99.99885379, total pos 181, total neg 7415746, time 4.43
+loss 0.0518, classify loss 0.0518, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 044 (lr 0.01000)
+Train:      tpr 98.36, tnr 98.77, total pos 1767, total neg 5048, time 138.08
+loss 0.0515, classify loss 0.0514, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99568494, total pos 181, total neg 7415886, time 3.87
+loss 0.0316, classify loss 0.0313, regress loss 0.0000, 0.0001, 0.0001, 0.0001
+Epoch 045 (lr 0.01000)
+Train:      tpr 98.75, tnr 98.87, total pos 1767, total neg 5048, time 138.13
+loss 0.0453, classify loss 0.0452, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99835477, total pos 181, total neg 7415390, time 3.92
+loss 0.0319, classify loss 0.0317, regress loss 0.0000, 0.0001, 0.0000, 0.0000
+Epoch 046 (lr 0.01000)
+Train:      tpr 98.42, tnr 98.99, total pos 1767, total neg 5048, time 137.68
+loss 0.0467, classify loss 0.0455, regress loss 0.0005, 0.0001, 0.0001, 0.0006
+Validation: tpr 99.45, tnr 99.99630577, total pos 181, total neg 7416962, time 4.13
+loss 0.0113, classify loss 0.0093, regress loss 0.0005, 0.0002, 0.0002, 0.0011
+Epoch 047 (lr 0.01000)
+Train:      tpr 99.21, tnr 98.95, total pos 1767, total neg 5048, time 137.87
+loss 0.0388, classify loss 0.0363, regress loss 0.0010, 0.0001, 0.0001, 0.0014
+Validation: tpr 96.13, tnr 99.99706037, total pos 181, total neg 7415901, time 3.98
+loss 0.0470, classify loss 0.0468, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Epoch 048 (lr 0.01000)
+Train:      tpr 98.70, tnr 98.83, total pos 1767, total neg 5048, time 137.93
+loss 0.0406, classify loss 0.0404, regress loss 0.0001, 0.0000, 0.0000, 0.0001
+Validation: tpr 93.37, tnr 99.99639987, total pos 181, total neg 7416403, time 4.12
+loss 0.0763, classify loss 0.0762, regress loss 0.0001, 0.0000, 0.0000, 0.0000
+Epoch 049 (lr 0.01000)
+Train:      tpr 98.81, tnr 99.05, total pos 1767, total neg 5048, time 137.32
+loss 0.0302, classify loss 0.0299, regress loss 0.0001, 0.0000, 0.0002, 0.0000
+Validation: tpr 97.79, tnr 99.99681795, total pos 181, total neg 7416603, time 3.82
+loss 0.0395, classify loss 0.0395, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 050 (lr 0.01000)
+Train:      tpr 98.42, tnr 98.53, total pos 1767, total neg 5048, time 137.22
+loss 0.0516, classify loss 0.0515, regress loss 0.0000, 0.0000, 0.0000, 0.0001
+Validation: tpr 97.79, tnr 99.99858438, total pos 181, total neg 7417245, time 4.20
+loss 0.0378, classify loss 0.0377, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 051 (lr 0.00100)
+Train:      tpr 98.92, tnr 99.13, total pos 1767, total neg 5048, time 137.62
+loss 0.0361, classify loss 0.0361, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99827441, total pos 181, total neg 7417745, time 4.28
+loss 0.0325, classify loss 0.0325, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 052 (lr 0.00100)
+Train:      tpr 98.75, tnr 98.83, total pos 1767, total neg 5048, time 138.09
+loss 0.0375, classify loss 0.0375, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99843568, total pos 181, total neg 7415350, time 3.88
+loss 0.0501, classify loss 0.0501, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 053 (lr 0.00100)
+Train:      tpr 99.09, tnr 99.23, total pos 1767, total neg 5048, time 138.48
+loss 0.0307, classify loss 0.0307, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99782925, total pos 181, total neg 7416794, time 3.95
+loss 0.0574, classify loss 0.0574, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 054 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.15, total pos 1767, total neg 5048, time 138.15
+loss 0.0294, classify loss 0.0294, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99824715, total pos 181, total neg 7416505, time 3.97
+loss 0.0468, classify loss 0.0468, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 055 (lr 0.00100)
+Train:      tpr 99.09, tnr 99.37, total pos 1767, total neg 5048, time 138.36
+loss 0.0286, classify loss 0.0286, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99724919, total pos 181, total neg 7416001, time 4.07
+loss 0.0359, classify loss 0.0359, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 056 (lr 0.00100)
+Train:      tpr 99.04, tnr 98.99, total pos 1767, total neg 5048, time 139.13
+loss 0.0312, classify loss 0.0312, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99885399, total pos 181, total neg 7417021, time 4.12
+loss 0.0681, classify loss 0.0681, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 057 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.56, total pos 1767, total neg 5048, time 138.96
+loss 0.0233, classify loss 0.0233, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99803141, total pos 181, total neg 7416488, time 4.35
+loss 0.0484, classify loss 0.0484, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 058 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.29, total pos 1767, total neg 5048, time 139.05
+loss 0.0252, classify loss 0.0252, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99803132, total pos 181, total neg 7416139, time 3.92
+loss 0.0469, classify loss 0.0469, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 059 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.31, total pos 1767, total neg 5048, time 151.86
+loss 0.0257, classify loss 0.0257, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99884029, total pos 181, total neg 7415662, time 12.77
+loss 0.0403, classify loss 0.0403, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 060 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.43, total pos 1767, total neg 5048, time 234.38
+loss 0.0249, classify loss 0.0249, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99838181, total pos 181, total neg 7415689, time 20.40
+loss 0.0535, classify loss 0.0535, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 061 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.35, total pos 1767, total neg 5048, time 245.07
+loss 0.0274, classify loss 0.0274, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99863824, total pos 181, total neg 7416851, time 22.71
+loss 0.0206, classify loss 0.0206, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 062 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.54, total pos 1767, total neg 5048, time 211.90
+loss 0.0195, classify loss 0.0194, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99925834, total pos 181, total neg 7415749, time 4.40
+loss 0.0583, classify loss 0.0583, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 063 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.41, total pos 1767, total neg 5048, time 215.41
+loss 0.0279, classify loss 0.0279, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99800436, total pos 181, total neg 7416166, time 15.86
+loss 0.0274, classify loss 0.0274, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 064 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.39, total pos 1767, total neg 5048, time 193.55
+loss 0.0233, classify loss 0.0233, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99826056, total pos 181, total neg 7416168, time 3.92
+loss 0.0704, classify loss 0.0704, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 065 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.37, total pos 1767, total neg 5048, time 187.94
+loss 0.0285, classify loss 0.0285, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99866512, total pos 181, total neg 7416418, time 4.03
+loss 0.0453, classify loss 0.0453, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 066 (lr 0.00100)
+Train:      tpr 99.09, tnr 99.39, total pos 1767, total neg 5048, time 138.64
+loss 0.0235, classify loss 0.0235, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99906961, total pos 181, total neg 7416267, time 4.24
+loss 0.0794, classify loss 0.0794, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 067 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.37, total pos 1767, total neg 5048, time 139.72
+loss 0.0269, classify loss 0.0269, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99908308, total pos 181, total neg 7416162, time 4.00
+loss 0.0378, classify loss 0.0378, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 068 (lr 0.00100)
+Train:      tpr 98.92, tnr 99.43, total pos 1767, total neg 5048, time 138.41
+loss 0.0235, classify loss 0.0234, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99917758, total pos 181, total neg 7417174, time 4.06
+loss 0.0653, classify loss 0.0653, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 069 (lr 0.00100)
+Train:      tpr 99.09, tnr 99.45, total pos 1767, total neg 5048, time 138.54
+loss 0.0265, classify loss 0.0265, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99840875, total pos 181, total neg 7415560, time 4.12
+loss 0.0652, classify loss 0.0652, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 070 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.37, total pos 1767, total neg 5048, time 138.28
+loss 0.0243, classify loss 0.0243, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99869207, total pos 181, total neg 7416313, time 4.11
+loss 0.0581, classify loss 0.0581, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 071 (lr 0.00100)
+Train:      tpr 99.04, tnr 99.27, total pos 1767, total neg 5048, time 138.38
+loss 0.0249, classify loss 0.0249, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99896189, total pos 181, total neg 7417321, time 4.11
+loss 0.0371, classify loss 0.0371, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 072 (lr 0.00100)
+Train:      tpr 99.49, tnr 99.41, total pos 1767, total neg 5048, time 138.96
+loss 0.0194, classify loss 0.0193, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99846295, total pos 181, total neg 7416799, time 4.02
+loss 0.0464, classify loss 0.0464, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 073 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.31, total pos 1767, total neg 5048, time 140.38
+loss 0.0235, classify loss 0.0235, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99865183, total pos 181, total neg 7417472, time 4.95
+loss 0.0355, classify loss 0.0355, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 074 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.39, total pos 1767, total neg 5048, time 138.78
+loss 0.0230, classify loss 0.0230, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 95.58, tnr 99.99908299, total pos 181, total neg 7415386, time 4.35
+loss 0.0468, classify loss 0.0468, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 075 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.60, total pos 1767, total neg 5048, time 141.39
+loss 0.0200, classify loss 0.0200, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99835491, total pos 181, total neg 7416026, time 4.06
+loss 0.0405, classify loss 0.0405, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 076 (lr 0.00100)
+Train:      tpr 99.09, tnr 99.35, total pos 1767, total neg 5048, time 137.47
+loss 0.0240, classify loss 0.0240, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99699286, total pos 181, total neg 7415686, time 4.14
+loss 0.0352, classify loss 0.0352, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 077 (lr 0.00100)
+Train:      tpr 99.43, tnr 99.45, total pos 1767, total neg 5048, time 138.55
+loss 0.0187, classify loss 0.0187, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99900212, total pos 181, total neg 7415697, time 3.98
+loss 0.0418, classify loss 0.0418, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 078 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.50, total pos 1767, total neg 5048, time 138.09
+loss 0.0256, classify loss 0.0256, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99912376, total pos 181, total neg 7418043, time 3.88
+loss 0.0276, classify loss 0.0276, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 079 (lr 0.00100)
+Train:      tpr 99.55, tnr 99.37, total pos 1767, total neg 5048, time 137.32
+loss 0.0205, classify loss 0.0205, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99819318, total pos 181, total neg 7416325, time 4.24
+loss 0.0347, classify loss 0.0347, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 080 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.43, total pos 1767, total neg 5048, time 137.41
+loss 0.0225, classify loss 0.0225, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99855741, total pos 181, total neg 7417227, time 4.57
+loss 0.0593, classify loss 0.0592, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 081 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.33, total pos 1767, total neg 5048, time 136.79
+loss 0.0242, classify loss 0.0241, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99830086, total pos 181, total neg 7415515, time 4.07
+loss 0.0509, classify loss 0.0509, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 082 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.48, total pos 1767, total neg 5048, time 136.23
+loss 0.0261, classify loss 0.0261, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99888082, total pos 181, total neg 7416156, time 4.05
+loss 0.0293, classify loss 0.0293, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 083 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.52, total pos 1767, total neg 5048, time 137.18
+loss 0.0232, classify loss 0.0232, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99803132, total pos 181, total neg 7416138, time 4.11
+loss 0.0372, classify loss 0.0372, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 084 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.37, total pos 1767, total neg 5048, time 135.53
+loss 0.0224, classify loss 0.0223, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99861126, total pos 181, total neg 7416784, time 4.03
+loss 0.0224, classify loss 0.0224, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 085 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.50, total pos 1767, total neg 5048, time 137.14
+loss 0.0231, classify loss 0.0231, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99882690, total pos 181, total neg 7416231, time 4.09
+loss 0.0352, classify loss 0.0352, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 086 (lr 0.00100)
+Train:      tpr 98.98, tnr 99.41, total pos 1767, total neg 5048, time 136.99
+loss 0.0256, classify loss 0.0256, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99840874, total pos 181, total neg 7415521, time 4.14
+loss 0.0758, classify loss 0.0758, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 087 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.62, total pos 1767, total neg 5048, time 137.32
+loss 0.0177, classify loss 0.0177, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99905596, total pos 181, total neg 7414933, time 4.06
+loss 0.0423, classify loss 0.0423, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 088 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.58, total pos 1767, total neg 5048, time 137.13
+loss 0.0191, classify loss 0.0191, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99844921, total pos 181, total neg 7415561, time 4.09
+loss 0.0204, classify loss 0.0204, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 089 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.50, total pos 1767, total neg 5048, time 138.50
+loss 0.0224, classify loss 0.0224, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99811221, total pos 181, total neg 7416066, time 3.98
+loss 0.0183, classify loss 0.0183, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 090 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.50, total pos 1767, total neg 5048, time 138.49
+loss 0.0247, classify loss 0.0246, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99901570, total pos 181, total neg 7416441, time 4.20
+loss 0.0326, classify loss 0.0326, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 091 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.54, total pos 1767, total neg 5048, time 137.84
+loss 0.0194, classify loss 0.0194, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99906970, total pos 181, total neg 7417000, time 3.82
+loss 0.0517, classify loss 0.0517, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 092 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.50, total pos 1767, total neg 5048, time 138.24
+loss 0.0202, classify loss 0.0202, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99888084, total pos 181, total neg 7416278, time 4.33
+loss 0.0306, classify loss 0.0306, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 093 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.43, total pos 1767, total neg 5048, time 139.33
+loss 0.0200, classify loss 0.0200, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99847636, total pos 181, total neg 7416428, time 4.06
+loss 0.0433, classify loss 0.0433, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 094 (lr 0.00100)
+Train:      tpr 99.21, tnr 99.33, total pos 1767, total neg 5048, time 138.91
+loss 0.0238, classify loss 0.0238, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99906954, total pos 181, total neg 7415723, time 56.59
+loss 0.0341, classify loss 0.0341, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 095 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.47, total pos 1767, total neg 5048, time 139.28
+loss 0.0251, classify loss 0.0251, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99862472, total pos 181, total neg 7416646, time 4.09
+loss 0.0270, classify loss 0.0270, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 096 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.54, total pos 1767, total neg 5048, time 141.02
+loss 0.0206, classify loss 0.0206, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99870553, total pos 181, total neg 7416191, time 3.96
+loss 0.0364, classify loss 0.0364, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 097 (lr 0.00100)
+Train:      tpr 99.15, tnr 99.37, total pos 1767, total neg 5048, time 136.32
+loss 0.0246, classify loss 0.0245, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99874582, total pos 181, total neg 7415192, time 4.33
+loss 0.0614, classify loss 0.0614, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 098 (lr 0.00100)
+Train:      tpr 99.38, tnr 99.56, total pos 1767, total neg 5048, time 136.70
+loss 0.0206, classify loss 0.0206, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99870549, total pos 181, total neg 7415937, time 3.90
+loss 0.0803, classify loss 0.0803, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 099 (lr 0.00100)
+Train:      tpr 99.26, tnr 99.35, total pos 1767, total neg 5048, time 136.06
+loss 0.0227, classify loss 0.0226, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99834156, total pos 181, total neg 7416623, time 3.86
+loss 0.0343, classify loss 0.0343, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 100 (lr 0.00100)
+Train:      tpr 99.32, tnr 99.47, total pos 1767, total neg 5048, time 135.20
+loss 0.0223, classify loss 0.0223, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99849001, total pos 181, total neg 7417269, time 4.09
+loss 0.0420, classify loss 0.0420, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 101 (lr 0.00050)
+Train:      tpr 99.43, tnr 99.45, total pos 1767, total neg 5048, time 135.24
+loss 0.0227, classify loss 0.0227, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99822020, total pos 181, total neg 7416543, time 4.01
+loss 0.0254, classify loss 0.0254, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 102 (lr 0.00050)
+Train:      tpr 99.55, tnr 99.64, total pos 1767, total neg 5048, time 134.61
+loss 0.0197, classify loss 0.0197, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99879992, total pos 181, total neg 7416182, time 3.98
+loss 0.0298, classify loss 0.0298, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 103 (lr 0.00050)
+Train:      tpr 99.26, tnr 99.50, total pos 1767, total neg 5048, time 134.98
+loss 0.0199, classify loss 0.0198, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99885398, total pos 181, total neg 7416947, time 4.10
+loss 0.0741, classify loss 0.0741, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 104 (lr 0.00050)
+Train:      tpr 99.32, tnr 99.66, total pos 1767, total neg 5048, time 136.01
+loss 0.0162, classify loss 0.0162, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99873267, total pos 181, total neg 7417140, time 3.99
+loss 0.0681, classify loss 0.0680, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 105 (lr 0.00050)
+Train:      tpr 99.26, tnr 99.54, total pos 1767, total neg 5048, time 136.61
+loss 0.0218, classify loss 0.0217, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99893492, total pos 181, total neg 7417306, time 4.06
+loss 0.0254, classify loss 0.0254, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 106 (lr 0.00050)
+Train:      tpr 99.38, tnr 99.64, total pos 1767, total neg 5048, time 136.02
+loss 0.0179, classify loss 0.0179, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 99.45, tnr 99.99803140, total pos 181, total neg 7416447, time 4.17
+loss 0.0150, classify loss 0.0150, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 107 (lr 0.00050)
+Train:      tpr 99.26, tnr 99.58, total pos 1767, total neg 5048, time 137.46
+loss 0.0186, classify loss 0.0186, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99815275, total pos 181, total neg 7416416, time 3.94
+loss 0.0167, classify loss 0.0167, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 108 (lr 0.00050)
+Train:      tpr 99.38, tnr 99.47, total pos 1767, total neg 5048, time 135.74
+loss 0.0197, classify loss 0.0197, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99815270, total pos 181, total neg 7416239, time 4.03
+loss 0.0366, classify loss 0.0366, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 109 (lr 0.00050)
+Train:      tpr 99.15, tnr 99.60, total pos 1767, total neg 5048, time 137.86
+loss 0.0201, classify loss 0.0201, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99871914, total pos 181, total neg 7416911, time 3.85
+loss 0.0381, classify loss 0.0381, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 110 (lr 0.00050)
+Train:      tpr 99.38, tnr 99.41, total pos 1767, total neg 5048, time 136.68
+loss 0.0210, classify loss 0.0210, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99817948, total pos 181, total neg 7415469, time 4.09
+loss 0.0562, classify loss 0.0562, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 111 (lr 0.00050)
+Train:      tpr 99.55, tnr 99.58, total pos 1767, total neg 5048, time 138.33
+loss 0.0164, classify loss 0.0164, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99848988, total pos 181, total neg 7416639, time 4.13
+loss 0.0396, classify loss 0.0396, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 112 (lr 0.00050)
+Train:      tpr 99.26, tnr 99.54, total pos 1767, total neg 5048, time 137.71
+loss 0.0225, classify loss 0.0225, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99817962, total pos 181, total neg 7416039, time 3.88
+loss 0.0544, classify loss 0.0544, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 113 (lr 0.00050)
+Train:      tpr 99.32, tnr 99.50, total pos 1767, total neg 5048, time 137.44
+loss 0.0196, classify loss 0.0196, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99890794, total pos 181, total neg 7417177, time 3.99
+loss 0.0295, classify loss 0.0295, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 114 (lr 0.00050)
+Train:      tpr 99.49, tnr 99.48, total pos 1767, total neg 5048, time 136.69
+loss 0.0182, classify loss 0.0182, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99889420, total pos 181, total neg 7415446, time 4.03
+loss 0.0427, classify loss 0.0427, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 115 (lr 0.00050)
+Train:      tpr 99.32, tnr 99.45, total pos 1767, total neg 5048, time 135.95
+loss 0.0208, classify loss 0.0208, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99908317, total pos 181, total neg 7416848, time 3.93
+loss 0.0545, classify loss 0.0545, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 116 (lr 0.00050)
+Train:      tpr 99.49, tnr 99.66, total pos 1767, total neg 5048, time 135.96
+loss 0.0164, classify loss 0.0164, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99865161, total pos 181, total neg 7416269, time 3.89
+loss 0.0166, classify loss 0.0166, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 117 (lr 0.00050)
+Train:      tpr 99.38, tnr 99.66, total pos 1767, total neg 5048, time 135.64
+loss 0.0173, classify loss 0.0173, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99908320, total pos 181, total neg 7417090, time 4.28
+loss 0.0296, classify loss 0.0296, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 118 (lr 0.00050)
+Train:      tpr 99.32, tnr 99.66, total pos 1767, total neg 5048, time 135.43
+loss 0.0166, classify loss 0.0166, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99871908, total pos 181, total neg 7416516, time 4.04
+loss 0.0395, classify loss 0.0395, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 119 (lr 0.00050)
+Train:      tpr 99.26, tnr 99.54, total pos 1767, total neg 5048, time 135.45
+loss 0.0209, classify loss 0.0209, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99842243, total pos 181, total neg 7416470, time 3.88
+loss 0.0242, classify loss 0.0242, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 120 (lr 0.00050)
+Train:      tpr 99.38, tnr 99.39, total pos 1767, total neg 5048, time 135.33
+loss 0.0206, classify loss 0.0206, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99904272, total pos 181, total neg 7416846, time 4.02
+loss 0.0242, classify loss 0.0242, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 121 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.48, total pos 1767, total neg 5048, time 134.81
+loss 0.0204, classify loss 0.0204, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99862484, total pos 181, total neg 7417305, time 4.08
+loss 0.0206, classify loss 0.0206, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 122 (lr 0.00010)
+Train:      tpr 99.15, tnr 99.58, total pos 1767, total neg 5048, time 135.42
+loss 0.0189, classify loss 0.0189, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99828749, total pos 181, total neg 7416000, time 3.99
+loss 0.0227, classify loss 0.0227, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 123 (lr 0.00010)
+Train:      tpr 99.21, tnr 99.50, total pos 1767, total neg 5048, time 135.31
+loss 0.0195, classify loss 0.0195, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99861111, total pos 181, total neg 7415968, time 4.21
+loss 0.0290, classify loss 0.0290, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 124 (lr 0.00010)
+Train:      tpr 99.38, tnr 99.41, total pos 1767, total neg 5048, time 135.46
+loss 0.0209, classify loss 0.0209, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99912364, total pos 181, total neg 7417016, time 3.86
+loss 0.0614, classify loss 0.0614, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 125 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.64, total pos 1767, total neg 5048, time 134.90
+loss 0.0176, classify loss 0.0176, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99925836, total pos 181, total neg 7416012, time 4.30
+loss 0.0274, classify loss 0.0274, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 126 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.66, total pos 1767, total neg 5048, time 135.02
+loss 0.0172, classify loss 0.0172, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99897521, total pos 181, total neg 7416123, time 3.93
+loss 0.0343, classify loss 0.0343, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 127 (lr 0.00010)
+Train:      tpr 99.49, tnr 99.50, total pos 1767, total neg 5048, time 136.78
+loss 0.0172, classify loss 0.0172, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99890787, total pos 181, total neg 7416710, time 4.05
+loss 0.0303, classify loss 0.0303, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 128 (lr 0.00010)
+Train:      tpr 99.15, tnr 99.64, total pos 1767, total neg 5048, time 137.08
+loss 0.0178, classify loss 0.0178, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 95.58, tnr 99.99897526, total pos 181, total neg 7416509, time 4.19
+loss 0.0344, classify loss 0.0344, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 129 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.48, total pos 1767, total neg 5048, time 137.51
+loss 0.0187, classify loss 0.0187, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99923140, total pos 181, total neg 7416089, time 4.17
+loss 0.0418, classify loss 0.0418, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 130 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.54, total pos 1767, total neg 5048, time 136.34
+loss 0.0197, classify loss 0.0196, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99916410, total pos 181, total neg 7417125, time 4.00
+loss 0.0490, classify loss 0.0490, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 131 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.68, total pos 1767, total neg 5048, time 136.80
+loss 0.0171, classify loss 0.0170, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99892141, total pos 181, total neg 7417058, time 4.04
+loss 0.0352, classify loss 0.0352, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 132 (lr 0.00010)
+Train:      tpr 99.26, tnr 99.54, total pos 1767, total neg 5048, time 137.40
+loss 0.0178, classify loss 0.0178, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99878659, total pos 181, total neg 7417106, time 4.05
+loss 0.0414, classify loss 0.0414, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 133 (lr 0.00010)
+Train:      tpr 99.38, tnr 99.52, total pos 1767, total neg 5048, time 137.43
+loss 0.0183, classify loss 0.0183, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99882694, total pos 181, total neg 7416525, time 4.16
+loss 0.0489, classify loss 0.0489, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 134 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.48, total pos 1767, total neg 5048, time 139.61
+loss 0.0197, classify loss 0.0197, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99879990, total pos 181, total neg 7416044, time 4.02
+loss 0.0312, classify loss 0.0312, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 135 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.62, total pos 1767, total neg 5048, time 137.78
+loss 0.0171, classify loss 0.0171, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99862454, total pos 181, total neg 7415727, time 3.91
+loss 0.0378, classify loss 0.0378, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 136 (lr 0.00010)
+Train:      tpr 99.49, tnr 99.60, total pos 1767, total neg 5048, time 137.07
+loss 0.0172, classify loss 0.0172, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99913708, total pos 181, total neg 7416655, time 3.97
+loss 0.0277, classify loss 0.0277, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 137 (lr 0.00010)
+Train:      tpr 99.55, tnr 99.52, total pos 1767, total neg 5048, time 136.70
+loss 0.0162, classify loss 0.0162, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99879999, total pos 181, total neg 7416608, time 4.01
+loss 0.0584, classify loss 0.0584, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 138 (lr 0.00010)
+Train:      tpr 99.15, tnr 99.45, total pos 1767, total neg 5048, time 138.33
+loss 0.0280, classify loss 0.0280, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99855718, total pos 181, total neg 7416016, time 4.02
+loss 0.0363, classify loss 0.0363, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 139 (lr 0.00010)
+Train:      tpr 99.21, tnr 99.56, total pos 1767, total neg 5048, time 135.85
+loss 0.0203, classify loss 0.0203, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99863806, total pos 181, total neg 7415902, time 3.84
+loss 0.0443, classify loss 0.0443, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 140 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.48, total pos 1767, total neg 5048, time 195.05
+loss 0.0171, classify loss 0.0171, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99861109, total pos 181, total neg 7415889, time 6.25
+loss 0.0333, classify loss 0.0333, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 141 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.56, total pos 1767, total neg 5048, time 250.26
+loss 0.0190, classify loss 0.0190, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99900219, total pos 181, total neg 7416265, time 6.42
+loss 0.0386, classify loss 0.0386, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 142 (lr 0.00010)
+Train:      tpr 99.43, tnr 99.52, total pos 1767, total neg 5048, time 255.20
+loss 0.0192, classify loss 0.0191, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99909650, total pos 181, total neg 7415642, time 6.27
+loss 0.0369, classify loss 0.0369, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 143 (lr 0.00010)
+Train:      tpr 99.15, tnr 99.68, total pos 1767, total neg 5048, time 257.87
+loss 0.0165, classify loss 0.0165, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.79, tnr 99.99912366, total pos 181, total neg 7417179, time 6.70
+loss 0.0416, classify loss 0.0416, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 144 (lr 0.00010)
+Train:      tpr 99.21, tnr 99.58, total pos 1767, total neg 5048, time 265.23
+loss 0.0229, classify loss 0.0229, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.34, tnr 99.99877305, total pos 181, total neg 7416770, time 4.42
+loss 0.0289, classify loss 0.0289, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 145 (lr 0.00010)
+Train:      tpr 99.26, tnr 99.56, total pos 1767, total neg 5048, time 277.88
+loss 0.0195, classify loss 0.0195, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.13, tnr 99.99823371, total pos 181, total neg 7416692, time 4.09
+loss 0.0632, classify loss 0.0632, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 146 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.45, total pos 1767, total neg 5048, time 266.95
+loss 0.0245, classify loss 0.0245, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 98.90, tnr 99.99863796, total pos 181, total neg 7415353, time 6.16
+loss 0.0460, classify loss 0.0459, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 147 (lr 0.00010)
+Train:      tpr 99.49, tnr 99.47, total pos 1767, total neg 5048, time 258.42
+loss 0.0188, classify loss 0.0188, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99900214, total pos 181, total neg 7415870, time 6.21
+loss 0.0586, classify loss 0.0586, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 148 (lr 0.00010)
+Train:      tpr 99.26, tnr 99.60, total pos 1767, total neg 5048, time 260.09
+loss 0.0199, classify loss 0.0198, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 97.24, tnr 99.99874607, total pos 181, total neg 7416668, time 6.40
+loss 0.0325, classify loss 0.0325, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 149 (lr 0.00010)
+Train:      tpr 99.32, tnr 99.52, total pos 1767, total neg 5048, time 258.62
+loss 0.0242, classify loss 0.0242, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 95.58, tnr 99.99908316, total pos 181, total neg 7416751, time 6.39
+loss 0.0732, classify loss 0.0732, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Epoch 150 (lr 0.00010)
+Train:      tpr 99.09, tnr 99.68, total pos 1767, total neg 5048, time 262.48
+loss 0.0196, classify loss 0.0196, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+Validation: tpr 96.69, tnr 99.99910999, total pos 181, total neg 7415623, time 4.18
+loss 0.0485, classify loss 0.0485, regress loss 0.0000, 0.0000, 0.0000, 0.0000
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f07123fe490> <class 'int'> <class 'int'>
+88
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7ff8183ee810> <class 'int'> <class 'int'>
+88
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7fcb028e3350> <class 'int'> <class 'int'>
+88
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f5283080ed0> <class 'int'> <class 'int'>
+88
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7ff37fe5a710> <class 'int'> <class 'int'>
+88
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f5beb521090> <class 'int'> <class 'int'>
+88
+epoch 1
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f4e8916b310> <class 'int'> <class 'int'>
+88
+epoch 1
+[0.4913610816001892, 0.43547022342681885, 0.0018201589118689299, 0.0029119958635419607, 0.0020586764439940453, 0.04910004138946533, tensor(8, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.19878709316253662, 0.1493944376707077, 0.002010764554142952, 0.0008253162959590554, 0.001504302490502596, 0.04505227878689766, tensor(12, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.07941313087940216, 0.06767012923955917, 0.001525967731140554, 0.0018211904680356383, 0.0008546630851924419, 0.007541177328675985, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.13539640605449677, 0.12425974011421204, 0.001424337038770318, 0.0011115375673398376, 0.002315542893484235, 0.006285244133323431, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.07332422584295273, 0.05410659313201904, 0.0007600245298817754, 0.001538995187729597, 0.002168565057218075, 0.014750043861567974, tensor(9, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32]
+[0.07467767596244812, 0.056621991097927094, 0.0009866253240033984, 0.0007397318258881569, 0.0005411377060227096, 0.015788188204169273, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32]
+[0.17687392234802246, 0.16016985476016998, 0.001208841917105019, 0.0019207251025363803, 0.0009847873589023948, 0.012589710764586926, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.1617773175239563, 0.1139313206076622, 0.003562068333849311, 0.0013794334372505546, 0.0009600198245607316, 0.0419444739818573, tensor(10, device='cuda:0'), 10, tensor(28, device='cuda:0'), 32]
+[0.05174947902560234, 0.03158644214272499, 0.0032631130889058113, 0.0019947183318436146, 0.0005050884210504591, 0.0144001180306077, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.07528530061244965, 0.04236316680908203, 0.0031133978627622128, 0.0020483846310526133, 0.00046334712533280253, 0.0272970087826252, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.08349652588367462, 0.05949848145246506, 0.001995387254282832, 0.0018918325658887625, 0.0003446800692472607, 0.019766146317124367, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.13083748519420624, 0.1231870949268341, 0.0008889709715731442, 0.00072108069434762, 0.0009635303285904229, 0.005076810717582703, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.35010257363319397, 0.3417358696460724, 0.002169816754758358, 0.0009820859413594007, 0.001109797740355134, 0.004105004947632551, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.0629679262638092, 0.05698841065168381, 0.0007169986492954195, 0.00018784948042593896, 0.000191841900232248, 0.004882825538516045, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.13931699097156525, 0.13209934532642365, 0.0009735561907291412, 0.002384097082540393, 0.0009309562155976892, 0.002929043723270297, tensor(10, device='cuda:0'), 10, tensor(29, device='cuda:0'), 32]
+[0.1685691922903061, 0.15747971832752228, 0.0005440893582999706, 0.001243931706994772, 0.0008211573585867882, 0.008480298332870007, tensor(9, device='cuda:0'), 10, tensor(29, device='cuda:0'), 32]
+[0.11834321916103363, 0.11276841163635254, 0.0005378045025281608, 0.0012141796760261059, 0.0008555655949749053, 0.0029672577511519194, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.03515928238630295, 0.023849090561270714, 0.00239183334633708, 0.0037209277506917715, 0.00038800432230345905, 0.0048094242811203, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.3020654618740082, 0.2918429374694824, 0.0004683735314756632, 0.0012105453060939908, 0.0008025766583159566, 0.0077410354278981686, tensor(11, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.33809152245521545, 0.3302839696407318, 0.0007487231632694602, 0.0007842158665880561, 0.0020010280422866344, 0.004273587372153997, tensor(10, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.15291179716587067, 0.14711736142635345, 0.0014206991763785481, 0.0008107716566883028, 0.0006011255900375545, 0.0029618225526064634, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.09542390704154968, 0.0889822244644165, 0.00041366397636011243, 0.000933414907194674, 0.001578767434693873, 0.0035158328246325254, tensor(10, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32]
+[0.14061248302459717, 0.12900149822235107, 0.0011828019050881267, 0.0021185153163969517, 0.0013905655359849334, 0.0069191185757517815, tensor(12, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32]
+[0.07349155098199844, 0.0630728155374527, 0.0002985075698234141, 0.0022544770035892725, 0.0004153219051659107, 0.007450422737747431, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.03431389480829239, 0.02843337133526802, 0.0006304532871581614, 0.0010425946675240993, 0.0002078279503621161, 0.003999648150056601, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32]
+[0.04150533676147461, 0.036460552364587784, 0.0005394837935455143, 0.0002511771454010159, 0.0004862320201937109, 0.003767888294532895, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32]
+[0.03387874364852905, 0.023987440392374992, 0.00043560389894992113, 0.0016483942745253444, 0.000560288259293884, 0.007247016299515963, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.03934532403945923, 0.0346866250038147, 0.00037601671647280455, 0.0019187333527952433, 0.000949892564676702, 0.0014140561688691378, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.5201210379600525, 0.5148354768753052, 0.000715102069079876, 0.0008107248577289283, 0.0010760894510895014, 0.0026836134493350983, tensor(8, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.2299034595489502, 0.2172018587589264, 0.0009757815860211849, 0.004021996632218361, 0.000652121496386826, 0.00705168629065156, tensor(6, device='cuda:0'), 7, tensor(30, device='cuda:0'), 32]
+[0.044739965349435806, 0.03788606822490692, 0.0008121241698972881, 0.0010257952380925417, 0.0016698784893378615, 0.003346096258610487, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.0185551755130291, 0.013999898917973042, 0.0006975432625040412, 0.000487115845317021, 0.0007176747894845903, 0.002652942668646574, tensor(8, device='cuda:0'), 8, tensor(32, device='cuda:0'), 32]
+[0.08941039443016052, 0.08575820177793503, 0.0005800863145850599, 0.001364729250781238, 0.00042728069820441306, 0.0012800919357687235, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32]
+[0.1127931997179985, 0.10051660239696503, 0.0015504416078329086, 0.0030841687694191933, 0.0004545835836324841, 0.007187404669821262, tensor(10, device='cuda:0'), 10, tensor(29, device='cuda:0'), 32]
+[0.5685945749282837, 0.5607202649116516, 0.0003812200448010117, 0.0004968238063156605, 0.0008863473194651306, 0.006109942216426134, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.11075858771800995, 0.10502327978610992, 0.0009751056204549968, 0.0016388390213251114, 0.0007081882795318961, 0.0024131862446665764, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.07458481937646866, 0.07185866683721542, 0.0003210558497812599, 0.0001132748948293738, 0.0005670987884514034, 0.001724726753309369, tensor(10, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32]
+[0.3356625437736511, 0.3291241526603699, 0.0004294609825592488, 0.0005413871258497238, 0.00024816414224915206, 0.005319388583302498, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.8398488759994507, 0.8249039649963379, 0.0009496491402387619, 0.001632306375540793, 0.004097844008356333, 0.008265160955488682, tensor(8, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32]
+[0.015643814578652382, 0.009635033085942268, 0.0004614106728695333, 0.0007143546245060861, 0.0004605676222126931, 0.00437244912609458, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.032827552407979965, 0.02696075290441513, 0.00036759264185093343, 0.0015376898227259517, 0.0005499448161572218, 0.00341157172806561, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.15969006717205048, 0.1576841026544571, 0.0006436449475586414, 0.0004328942159190774, 0.00021190571715123951, 0.0007175193168222904, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.3121790289878845, 0.30906954407691956, 0.000455988512840122, 0.0005534948431886733, 0.0003444156900513917, 0.0017556037055328488, tensor(10, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.08524896949529648, 0.08026979863643646, 0.0010828124359250069, 0.000650731089990586, 0.0003665602416731417, 0.0028790633659809828, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.4551035761833191, 0.44895604252815247, 0.0008103740401566029, 0.0007444330840371549, 0.0005500375991687179, 0.004042672459036112, tensor(10, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.3579254150390625, 0.353024959564209, 0.0006071407697163522, 0.0010663502616807818, 0.0003332352207507938, 0.002893709810450673, tensor(6, device='cuda:0'), 7, tensor(32, device='cuda:0'), 32]
+[0.07860466837882996, 0.07676181197166443, 0.0004006230738013983, 0.00011435830674599856, 0.00021124717022757977, 0.0011166264303028584, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.038089506328105927, 0.03371235728263855, 0.0003447702038101852, 0.001001285039819777, 0.00036782940151169896, 0.002663266845047474, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.40810370445251465, 0.40141335129737854, 0.0004911494324915111, 0.0007213857024908066, 0.0005779271596111357, 0.004899896215647459, tensor(9, device='cuda:0'), 10, tensor(29, device='cuda:0'), 32]
+[0.3662082552909851, 0.36341413855552673, 0.0003254232578910887, 0.0004563555703498423, 0.0004465762176550925, 0.001565747195854783, tensor(11, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.05104396119713783, 0.04584468901157379, 0.0003243902465328574, 0.00045390555169433355, 0.0005494299693964422, 0.0038715493865311146, tensor(14, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32]
+[0.118283711373806, 0.11194054782390594, 0.0002231223916169256, 0.000961136887781322, 0.0006457553245127201, 0.004513146355748177, tensor(12, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32]
+[0.24589619040489197, 0.24033348262310028, 0.0003049750521313399, 0.00026439083740115166, 0.00018943868053611368, 0.004803902935236692, tensor(13, device='cuda:0'), 13, tensor(25, device='cuda:0'), 32]
+[0.10878670960664749, 0.10545793175697327, 0.0006364085711538792, 0.0004691883805207908, 0.00047366079525090754, 0.0017495207721367478, tensor(13, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.08918777108192444, 0.08771371841430664, 0.0003910506784450263, 0.00011395631008781493, 0.000302519096294418, 0.0006665278924629092, tensor(12, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.16426004469394684, 0.16204354166984558, 0.00034450384555384517, 0.00046623172238469124, 8.444159902865067e-05, 0.0013213255442678928, tensor(9, device='cuda:0'), 9, tensor(29, device='cuda:0'), 32]
+[0.12978601455688477, 0.12198260426521301, 0.00046892318641766906, 0.0006100832833908498, 0.00066639349097386, 0.006058004219084978, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.10399892926216125, 0.10060268640518188, 0.00021710785222239792, 0.0007242754218168557, 0.0006051032687537372, 0.0018497519195079803, tensor(10, device='cuda:0'), 10, tensor(29, device='cuda:0'), 32]
+[0.0527290478348732, 0.048969998955726624, 0.00023951035109348595, 0.00021271237346809357, 0.00016781337035354227, 0.0031390124931931496, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32]
+[0.22865690290927887, 0.2255614995956421, 0.0002487178426235914, 0.00019435910508036613, 0.0008109188638627529, 0.0018414080841466784, tensor(11, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.2663300931453705, 0.2599620521068573, 0.0008845310076139867, 0.0008237682050094008, 0.0015183700015768409, 0.0031413708347827196, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.09064655005931854, 0.088255375623703, 0.00025943006039597094, 0.00018877530237659812, 0.00029215996619313955, 0.0016508115222677588, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.23595978319644928, 0.23344272375106812, 0.00040720379911363125, 0.0003331394400447607, 0.0009404447628185153, 0.0008362671360373497, tensor(9, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.1340004801750183, 0.13247640430927277, 0.00012627709656953812, 6.660830695182085e-05, 0.00021527835633605719, 0.0011159256100654602, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.049106813967227936, 0.045943714678287506, 0.000720979820471257, 0.0001837987801991403, 0.00032029394060373306, 0.001938027678988874, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.1013081818819046, 0.09946343302726746, 0.00030147877987474203, 0.00018634727166499943, 0.00017395617032889277, 0.0011829694267362356, tensor(14, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32]
+[0.07998286187648773, 0.07675087451934814, 0.00030949508072808385, 0.00040862648165784776, 0.0002907774760387838, 0.002223085844889283, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.09527508914470673, 0.09225978702306747, 0.0007299385033547878, 0.0001710564101813361, 0.0004109308065380901, 0.001703371643088758, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.046638600528240204, 0.043729282915592194, 0.0004998487420380116, 0.00016179091471713036, 0.0002571410732343793, 0.001990538788959384, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.1360572725534439, 0.1329503208398819, 0.0010227938182651997, 0.00024359990493394434, 0.00021283076785039157, 0.0016277148388326168, tensor(13, device='cuda:0'), 14, tensor(30, device='cuda:0'), 32]
+[0.1429768204689026, 0.14129692316055298, 0.0006330558098852634, 0.00011870919115608558, 0.0002351535513298586, 0.0006929845549166203, tensor(12, device='cuda:0'), 13, tensor(29, device='cuda:0'), 32]
+[0.26125794649124146, 0.2589028477668762, 0.00050831597764045, 0.00013848078378941864, 0.00019680947298184037, 0.0015114814741536975, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.04654892534017563, 0.03960442543029785, 0.0015905993059277534, 0.00020108258468098938, 0.0002612064126878977, 0.004891613498330116, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.021808790042996407, 0.018877657130360603, 0.0007019387558102608, 0.0002136061229975894, 0.0001493593881605193, 0.0018662266666069627, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.360975056886673, 0.3561283349990845, 0.0006960923783481121, 0.0001922813680721447, 0.00018419923435430974, 0.0037741432897746563, tensor(11, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.10863910615444183, 0.10707785189151764, 0.0006518583395518363, 0.00011689231178024784, 0.00022256103693507612, 0.0005699368775822222, tensor(11, device='cuda:0'), 11, tensor(29, device='cuda:0'), 32]
+[0.016161112114787102, 0.013578173704445362, 0.0004525941039901227, 7.017893949523568e-05, 7.99110930529423e-05, 0.0019802541937679052, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.049604129046201706, 0.04749799147248268, 0.00012967987277079374, 0.00041794305434450507, 0.0004490759747568518, 0.001109435805119574, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.044487714767456055, 0.04217958450317383, 0.0009091153042390943, 0.0004771012463606894, 0.0005874434136785567, 0.00033446907764300704, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.18973711133003235, 0.18750330805778503, 0.0008489841129630804, 0.00019936409080401063, 0.00042102954466827214, 0.0007644277065992355, tensor(12, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.16665156185626984, 0.16259291768074036, 0.0007742462330497801, 0.00016097503248602152, 0.00035062202368862927, 0.0027727943379431963, tensor(8, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.10115592926740646, 0.09973741322755814, 0.0006478883442468941, 0.0002658927405718714, 6.535257125506178e-05, 0.00043938501039519906, tensor(8, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32]
+[0.06359189003705978, 0.060822367668151855, 0.0005288181710056961, 0.0006524208001792431, 0.00025545668904669583, 0.0013328241184353828, tensor(7, device='cuda:0'), 8, tensor(32, device='cuda:0'), 32]
+[0.36313989758491516, 0.36112791299819946, 0.0005536038661375642, 0.0001798817393137142, 8.528330363333225e-05, 0.001193199073895812, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.03758322447538376, 0.03400430455803871, 0.00011402525706216693, 6.77740026731044e-05, 2.7434663934400305e-05, 0.003369690151885152, tensor(7, device='cuda:0'), 7, tensor(31, device='cuda:0'), 32]
+[0.02968951314687729, 0.02703019417822361, 0.0008722959901206195, 0.0005234230775386095, 0.00023071677424013615, 0.0010328839998692274, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.1463143527507782, 0.14090456068515778, 0.0005058986134827137, 0.0009767694864422083, 0.0003676553606055677, 0.003559465054422617, tensor(7, device='cuda:0'), 7, tensor(30, device='cuda:0'), 32]
+[0.4272267818450928, 0.42414969205856323, 0.000806553871370852, 0.00025663452106527984, 0.00022432788682635874, 0.0017895855708047748, tensor(10, device='cuda:0'), 10, tensor(25, device='cuda:0'), 32]
+[0.04902063310146332, 0.046212129294872284, 0.001469323760829866, 0.0005141242872923613, 0.000178265298018232, 0.0006467896746471524, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.02399764023721218, 0.021808123216032982, 0.0006121629266999662, 0.00019277940737083554, 0.00017644041508901864, 0.0012081339955329895, tensor(14, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32]
+[0.06422579288482666, 0.0620296485722065, 0.0007782792090438306, 0.00022684852592647076, 0.0001604205317562446, 0.0010305989999324083, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.03844498470425606, 0.03671072795987129, 0.0004599441308528185, 0.00020378801855258644, 0.0005379571812227368, 0.0005325668607838452, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.03529123589396477, 0.03390774130821228, 0.0004718222189694643, 0.00017220682639162987, 0.00025549333076924086, 0.0004839754546992481, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.0296325646340847, 0.026570167392492294, 0.0008435549098066986, 0.0005102654104121029, 9.20189413591288e-05, 0.0016165574779734015, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.2805192768573761, 0.27228492498397827, 0.0011558845872059464, 0.0004912916338071227, 0.00037978164618834853, 0.006207396276295185, tensor(11, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.6012515425682068, 0.5971410870552063, 0.0010126489214599133, 0.0005614359979517758, 0.0008644451154395938, 0.0016719615086913109, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.009304040111601353, 0.007423657923936844, 0.00040364707820117474, 9.963413322111592e-05, 0.0001535242045065388, 0.0012235775357112288, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.2210405021905899, 0.21925316751003265, 0.00040803654701448977, 0.0001161645122920163, 0.00029702059691771865, 0.0009660961804911494, tensor(14, device='cuda:0'), 14, tensor(30, device='cuda:0'), 32]
+[0.05933605134487152, 0.056424617767333984, 0.0005120074492879212, 0.00037466990761458874, 0.0009518301812931895, 0.001072922721505165, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.03433708846569061, 0.031726665794849396, 0.0001900355564430356, 0.000370918947737664, 0.000623872212599963, 0.00142559758387506, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.12316448241472244, 0.12165287882089615, 0.000459030969068408, 0.00013189445598982275, 6.223199306987226e-05, 0.0008584391907788813, tensor(13, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.07831832021474838, 0.07543312013149261, 0.0011087110033258796, 0.00022751151118427515, 0.0005236676661297679, 0.0010253083892166615, tensor(14, device='cuda:0'), 14, tensor(29, device='cuda:0'), 32]
+[0.4087637662887573, 0.4072590470314026, 0.0006339026149362326, 0.00035018305061385036, 0.0004179174720775336, 0.00010273777297697961, tensor(10, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.009273913688957691, 0.0069789765402674675, 0.00045812231837771833, 9.461502486374229e-05, 0.0003100785834249109, 0.0014321220805868506, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.24990183115005493, 0.24770714342594147, 0.00033263684599660337, 0.00012254828470759094, 0.0007804699707776308, 0.0009590346598997712, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.22859224677085876, 0.22573143243789673, 0.00035834568552672863, 0.00021532928803935647, 0.0008145238971337676, 0.0014726080698892474, tensor(10, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.04830802604556084, 0.04596593976020813, 0.00032217870466411114, 0.0005585358012467623, 0.00023154416703619063, 0.0012298248475417495, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.035443264991045, 0.03466802090406418, 0.00040856993291527033, 0.00024317941279150546, 6.492678949143738e-05, 5.856607458554208e-05, tensor(7, device='cuda:0'), 7, tensor(32, device='cuda:0'), 32]
+[0.09165844321250916, 0.0897681787610054, 0.0003203651576768607, 0.0002526892931200564, 0.00015610424452461302, 0.0011611046502366662, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.04747815802693367, 0.04566948115825653, 0.0008998173289000988, 8.777101174928248e-05, 0.0001246052997885272, 0.0006964834756217897, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.01846952736377716, 0.017536984756588936, 0.00020931143080815673, 3.6422348784981295e-05, 0.00032761722104623914, 0.00035919263609685004, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.3274903893470764, 0.32676199078559875, 0.00017906409630086273, 0.00033008676837198436, 0.00013751565711572766, 8.176176197594032e-05, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.08116491883993149, 0.08036846667528152, 0.00022688544413540512, 8.132107177516446e-05, 0.0001295918773394078, 0.0003586480161175132, tensor(13, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32]
+[0.0955718606710434, 0.09354414790868759, 0.0005688105593435466, 0.00030486079049296677, 0.0006363473949022591, 0.0005176991107873619, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32]
+[0.02940252609550953, 0.028247633948922157, 0.0006402995786629617, 6.31234870525077e-05, 0.00010541710071265697, 0.000346054119290784, tensor(14, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32]
+[0.0663512647151947, 0.06471505016088486, 0.0006755287759006023, 0.00011596347758313641, 0.0001527800632175058, 0.0006919426959939301, tensor(15, device='cuda:0'), 15, tensor(31, device='cuda:0'), 32]
+[0.018078047782182693, 0.016453897580504417, 0.00015789325698278844, 0.0004912743461318314, 0.00017153398948721588, 0.000803448143415153, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.31196704506874084, 0.3099738657474518, 0.0001968121068784967, 0.00014633371029049158, 0.00028185368864797056, 0.001368204248137772, tensor(12, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32]
+[0.04361287131905556, 0.0429065078496933, 0.00020024797413498163, 6.1429847846739e-05, 0.0002310845156898722, 0.0002135998656740412, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.0590461865067482, 0.05550944805145264, 0.001277509843930602, 0.00033641705522313714, 0.0006046837661415339, 0.0013181277317926288, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32]
+[0.21531906723976135, 0.21251241862773895, 0.000734591216314584, 4.101563536096364e-05, 0.0012477865675464272, 0.0007832305855117738, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.013819534331560135, 0.01091228798031807, 0.00033505604369565845, 0.00029566147713921964, 0.001110039302147925, 0.0011664885096251965, tensor(9, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32]
+[0.10567545890808105, 0.10401132702827454, 0.00022206372523214668, 0.00037342641735449433, 0.0003302060067653656, 0.0007384415366686881, tensor(12, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.4493367671966553, 0.4470585882663727, 0.00036186203942634165, 0.0003069720696657896, 0.000616624834947288, 0.0009927523788064718, tensor(11, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.04946502298116684, 0.0442788191139698, 0.0021022900473326445, 0.00035480991937220097, 0.0007579110679216683, 0.0019711931236088276, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.1196448877453804, 0.1170344203710556, 0.000503859540913254, 0.00019784376490861177, 0.00026547478046268225, 0.0016432901611551642, tensor(11, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.10546275228261948, 0.10407848656177521, 0.00016949624114204198, 0.00017252398538403213, 0.0003741313412319869, 0.0006681194063276052, tensor(11, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.07939022779464722, 0.07638730108737946, 0.00037933324347250164, 0.00014753115829080343, 0.00013021324411965907, 0.0023458492942154408, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.023097751662135124, 0.019993845373392105, 0.00029842890216968954, 0.00018960429588332772, 0.000414276379160583, 0.0022015967406332493, tensor(8, device='cuda:0'), 8, tensor(32, device='cuda:0'), 32]
+[0.029875755310058594, 0.027876699343323708, 0.0006172445719130337, 0.0002924079599324614, 0.0003112752456218004, 0.0007781267631798983, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.08259705454111099, 0.07970445603132248, 0.000838993932120502, 6.0109032347099856e-05, 0.0007195918005891144, 0.001273897010833025, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.041322555392980576, 0.03961960971355438, 0.0002499979455024004, 0.00023575386148877442, 0.00011977608664892614, 0.0010974172037094831, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.025911999866366386, 0.022348124533891678, 0.0008723245118744671, 0.00017896246572490782, 0.0016055757878348231, 0.0009070122032426298, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.06503937393426895, 0.06367705017328262, 0.0002523532893974334, 0.00014169987116474658, 0.00012754189083352685, 0.0008407281129620969, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.05271274596452713, 0.05122864991426468, 0.0007313181413337588, 0.0003261452657170594, 0.00021671189460903406, 0.0002099207922583446, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.14878901839256287, 0.14509347081184387, 0.0006432235240936279, 0.0005221709725446999, 0.0002704741491470486, 0.0022596840281039476, tensor(13, device='cuda:0'), 13, tensor(28, device='cuda:0'), 32]
+[0.033965036273002625, 0.032119929790496826, 0.00031182143720798194, 0.00025165622355416417, 0.0004357531724963337, 0.0008458771044388413, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.0320691354572773, 0.030454974621534348, 0.0003393730439711362, 0.00015375173825304955, 0.0007115803309716284, 0.00040945332148112357, tensor(15, device='cuda:0'), 15, tensor(32, device='cuda:0'), 32]
+[0.1111241802573204, 0.109964519739151, 0.0004769443185068667, 7.705109601374716e-05, 0.00036425591679289937, 0.0002414071059320122, tensor(14, device='cuda:0'), 14, tensor(30, device='cuda:0'), 32]
+[0.14142774045467377, 0.1404031217098236, 0.00021028266928624362, 0.00012130511458963156, 0.00033172700204886496, 0.0003612965811043978, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.07154818624258041, 0.06986325234174728, 0.00044386350782588124, 0.0001284083118662238, 6.640719948336482e-05, 0.0010462517384439707, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32]
+[0.04268128052353859, 0.039645686745643616, 0.00023808947298675776, 0.00024120962189044803, 0.0004128907748963684, 0.002143403049558401, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.3365314304828644, 0.333730012178421, 0.0003881047305185348, 0.00011911241745110601, 0.0003382656432222575, 0.00195591920055449, tensor(10, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.2991085648536682, 0.2963622510433197, 0.00043886431376449764, 0.00023239599249791354, 0.0004641798441298306, 0.0016108615091070533, tensor(12, device='cuda:0'), 12, tensor(28, device='cuda:0'), 32]
+[0.30752941966056824, 0.30519822239875793, 0.0005300524644553661, 0.00032024108804762363, 0.00021626305533573031, 0.0012645941460505128, tensor(10, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32]
+[0.08966456353664398, 0.08764153718948364, 0.0001900919887702912, 0.0002847815921995789, 0.00023570122721139342, 0.0013124506222084165, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.032782189548015594, 0.03156648576259613, 0.0002476175141055137, 0.00015990658721420914, 8.363172673853114e-05, 0.0007245460292324424, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.028955424204468727, 0.028449006378650665, 0.0001910085411509499, 3.570922126527876e-05, 3.754441786441021e-05, 0.00024215481244027615, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.01934857666492462, 0.017274685204029083, 0.00018061224545817822, 0.0002502900024410337, 0.000261342414887622, 0.0013816485879942775, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32]
+[0.1843542903661728, 0.1834886372089386, 9.828228212427348e-05, 0.00012345654249656945, 8.073622302617878e-05, 0.0005631775711663067, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32]
+[0.07914931327104568, 0.07658505439758301, 0.0001482146035414189, 0.0001016540772980079, 0.00025036410079337656, 0.002064026892185211, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.08465207368135452, 0.08268900215625763, 0.0005851062014698982, 3.480271334410645e-05, 0.00018176500452682376, 0.0011613932438194752, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32]
+[0.022581301629543304, 0.020935211330652237, 0.000808194512501359, 9.719353693071753e-05, 0.0002532369690015912, 0.0004874655860476196, tensor(8, device='cuda:0'), 8, tensor(32, device='cuda:0'), 32]
+[0.042395010590553284, 0.04139968380331993, 8.253684063674882e-05, 7.323583122342825e-05, 0.0002433500048937276, 0.000596204015891999, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32]
+[0.029446911066770554, 0.028967827558517456, 0.00011270176037214696, 5.808808782603592e-05, 6.667718116659671e-05, 0.00024161628971341997, tensor(7, device='cuda:0'), 7, tensor(32, device='cuda:0'), 32]
+[0.061275094747543335, 0.05992470681667328, 0.0005665247444994748, 6.362893327604979e-05, 2.0015497284475714e-05, 0.0007002194179221988, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32]
+[0.1396196335554123, 0.1361696422100067, 0.0007215740042738616, 0.0002604675537440926, 0.00039816246135160327, 0.0020697801373898983, tensor(11, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.1398480087518692, 0.13917258381843567, 7.10261519998312e-05, 6.931347161298618e-05, 9.558578312862664e-05, 0.0004395002906676382, tensor(8, device='cuda:0'), 8, tensor(23, device='cuda:0'), 24]
+
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7fca0cf0ef50> <class 'int'> <class 'int'>
+88
+epoch 1
+
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7fe521a28690> <class 'int'> <class 'int'>
+88
+epoch 1
+[0.5063737630844116, 0.46082067489624023, 0.0013111451407894492, 0.0027223736979067326, 0.0014633223181590438, 0.0400562509894371, tensor(10, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32]
+[0.42378854751586914, 0.36642029881477356, 0.002789233811199665, 0.0021548462100327015, 0.002721668453887105, 0.04970249906182289, tensor(10, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32]
+[0.08873848617076874, 0.06724128127098083, 0.0015422009164467454, 0.0031226137652993202, 0.0016172640025615692, 0.01521513145416975, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.15143629908561707, 0.13751372694969177, 0.0008835645276121795, 0.001780129037797451, 0.0007032876019366086, 0.010555588640272617, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32]
+[0.13575120270252228, 0.12086500227451324, 0.0002832775062415749, 0.0013446930097416043, 0.0020970553159713745, 0.011161175556480885, tensor(8, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32]
+[0.11054757982492447, 0.09866442531347275, 0.0005984290619380772, 0.0006986603839322925, 0.0022447321098297834, 0.008341324515640736, tensor(8, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32]
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7fa675cdff10> <class 'int'> <class 'int'>
+88
+epoch 1
+using gpu 0,1,2,3
+['/data/yangqinzhu/ctLung/luna16/subset0/', '/data/yangqinzhu/ctLung/luna16/subset1/', '/data/yangqinzhu/ctLung/luna16/subset2/', '/data/yangqinzhu/ctLung/luna16/subset3/', '/data/yangqinzhu/ctLung/luna16/subset4/', '/data/yangqinzhu/ctLung/luna16/subset5/', '/data/yangqinzhu/ctLung/luna16/subset6/', '/data/yangqinzhu/ctLung/luna16/subset7/', '/data/yangqinzhu/ctLung/luna16/subset8/']
+/data/yangqinzhu/ctLung/luna16/subset0/
+/data/yangqinzhu/ctLung/luna16/subset1/
+/data/yangqinzhu/ctLung/luna16/subset2/
+/data/yangqinzhu/ctLung/luna16/subset3/
+/data/yangqinzhu/ctLung/luna16/subset4/
+/data/yangqinzhu/ctLung/luna16/subset5/
+/data/yangqinzhu/ctLung/luna16/subset6/
+/data/yangqinzhu/ctLung/luna16/subset7/
+/data/yangqinzhu/ctLung/luna16/subset8/
+800
+800
+<data.DataBowl3Detector object at 0x7f20bd376190> <class 'int'> <class 'int'>
+88
+epoch 1
+[[0.45080408453941345, 0.38806086778640747, 0.002614011522382498, 0.003459097584709525, 0.0031645658891648054, 0.0535055510699749, tensor(8, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.4117058515548706, 0.37379905581474304, 0.00226798583753407, 0.001271490822546184, 0.0008676969446241856, 0.03349963575601578, tensor(9, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.08577742427587509, 0.07025181502103806, 0.0019746210891753435, 0.0017574757803231478, 0.0025412358809262514, 0.009252277202904224, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.10186349600553513, 0.0882539227604866, 0.000995529699139297, 0.000548995507415384, 0.0018064904725179076, 0.010258554480969906, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.0779813677072525, 0.06160891801118851, 0.0005715920706279576, 0.0019004310015588999, 0.0016854607965797186, 0.012214962393045425, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32], [0.043826039880514145, 0.031053055077791214, 0.0006758560193702579, 0.0016021622577682137, 0.002902346896007657, 0.007592618465423584, tensor(9, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32], [0.07232502847909927, 0.04317467287182808, 0.0011657102731987834, 0.002281113527715206, 0.0017839157953858376, 0.023919617757201195, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.23218467831611633, 0.16868150234222412, 0.002644977066665888, 0.00581649923697114, 0.004443460609763861, 0.05059824138879776, tensor(10, device='cuda:0'), 10, tensor(28, device='cuda:0'), 32], [1.4035804271697998, 1.2838999032974243, 0.0032014590688049793, 0.012804191559553146, 0.00212423549965024, 0.10155075788497925, tensor(13, device='cuda:0'), 13, tensor(17, device='cuda:0'), 32], [0.21053531765937805, 0.07062888890504837, 0.004433122929185629, 0.014811480417847633, 0.004316624253988266, 0.11634519696235657, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.05951916426420212, 0.03119233250617981, 0.0012763733975589275, 0.002762648044154048, 0.0008051651529967785, 0.023482641205191612, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.17452983558177948, 0.17202138900756836, 0.0007284922758117318, 0.0003927092475350946, 0.00045231953845359385, 0.0009349249303340912, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.8986580967903137, 0.8515126705169678, 0.0029875494074076414, 0.007488810922950506, 0.00580752594396472, 0.030861567705869675, tensor(5, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.34352973103523254, 0.3286242187023163, 0.0005137645057402551, 0.002212202874943614, 0.0003325529978610575, 0.011846985667943954, tensor(8, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.05478764325380325, 0.03642035275697708, 0.0006117034354247153, 0.0015324453124776483, 0.0005758912302553654, 0.015647245571017265, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.14847895503044128, 0.14329251646995544, 0.000253368605626747, 0.0005457947845570743, 0.0005914681823924184, 0.0037958030588924885, tensor(10, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32], [0.12309645861387253, 0.10883630812168121, 0.0010479293996468186, 0.0017603336600586772, 0.00042555032996460795, 0.011026334948837757, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.143344447016716, 0.11781951785087585, 0.002629851922392845, 0.002187438542023301, 0.0017729131504893303, 0.01893473044037819, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.5300511121749878, 0.5233423709869385, 0.001342361094430089, 0.0003777211531996727, 0.000792781647760421, 0.004195896442979574, tensor(10, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.13759486377239227, 0.12900537252426147, 0.0007129126461222768, 0.00032153952633962035, 0.0006868691998533905, 0.006868168246001005, tensor(12, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32], [0.046959277242422104, 0.042873721569776535, 0.0006159564945846796, 0.000947405758779496, 0.0008255983120761812, 0.0016965939430519938, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.17316365242004395, 0.16588307917118073, 0.0010359956650063396, 0.0008676309371367097, 0.0010191182373091578, 0.004357823636382818, tensor(10, device='cuda:0'), 10, tensor(28, device='cuda:0'), 32], [0.05498333275318146, 0.048793595284223557, 0.0011360419448465109, 0.00038713455433025956, 0.0005243233754299581, 0.004142235033214092, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.18670523166656494, 0.160841703414917, 0.0016037076711654663, 0.0036563051398843527, 0.001994576072320342, 0.018608948215842247, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.13913948833942413, 0.1329653412103653, 0.0007388924132101238, 0.0002300802880199626, 0.00138528470415622, 0.003819897072389722, tensor(9, device='cuda:0'), 9, tensor(29, device='cuda:0'), 32], [0.07083776593208313, 0.058705687522888184, 0.000875990663189441, 0.0002962059515994042, 0.0019296180689707398, 0.009030262008309364, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32], [0.0893288403749466, 0.08264632523059845, 0.0006231319275684655, 0.0011381208896636963, 0.001572868088260293, 0.0033483935985714197, tensor(13, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32], [0.024721784517169, 0.02045796811580658, 0.00035908501013182104, 9.676313493400812e-05, 0.0004146438732277602, 0.0033933264203369617, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.2758564054965973, 0.269146591424942, 0.0007928710547275841, 0.0011810041032731533, 0.0006820803391747177, 0.0040538618341088295, tensor(8, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.11356865614652634, 0.10827021300792694, 0.0003667724085971713, 0.0013701011193916202, 0.0007844117353670299, 0.002777160843834281, tensor(7, device='cuda:0'), 7, tensor(30, device='cuda:0'), 32], [0.06968513876199722, 0.051859717816114426, 0.0012331310426816344, 0.000995793379843235, 0.0012157565215602517, 0.014380743727087975, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.057819534093141556, 0.05088311806321144, 0.00034224288538098335, 0.0007213203934952617, 0.0006578097236342728, 0.0052150459960103035, tensor(8, device='cuda:0'), 8, tensor(30, device='cuda:0'), 32], [0.07317372411489487, 0.05316349118947983, 0.001957420026883483, 0.0020322981290519238, 0.0013938980409875512, 0.014626615680754185, tensor(9, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32], [0.014737962745130062, 0.0073934439569711685, 0.0008761106291785836, 0.0006092206458561122, 0.00044708137284033, 0.005412105470895767, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.703111469745636, 0.6939194798469543, 0.00041237089317291975, 0.0011905513238161802, 0.004406858701258898, 0.003182261483743787, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.3121701776981354, 0.29714834690093994, 0.0007734599057585001, 0.001970138866454363, 0.0007861742633394897, 0.011492046527564526, tensor(9, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.3478439152240753, 0.33582592010498047, 0.000581048137973994, 0.0006032899254933, 0.0020445589907467365, 0.00878908485174179, tensor(9, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32], [0.1456819325685501, 0.13256025314331055, 0.0009451258811168373, 0.0016178276855498552, 0.0016492875292897224, 0.008909434080123901, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.6629000902175903, 0.6271546483039856, 0.002360488520935178, 0.002830496756359935, 0.004406786058098078, 0.026147641241550446, tensor(8, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32], [0.10464029014110565, 0.08675166964530945, 0.0019362641032785177, 0.0017204306786879897, 0.0011728538665920496, 0.013059070333838463, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.15470443665981293, 0.14862532913684845, 0.0004402069316711277, 0.00021774059860035777, 0.00015241930668707937, 0.005268731154501438, tensor(13, device='cuda:0'), 13, tensor(29, device='cuda:0'), 32], [0.25682297348976135, 0.24149617552757263, 0.001502819824963808, 0.0006861325236968696, 0.0006825084565207362, 0.012455318123102188, tensor(13, device='cuda:0'), 13, tensor(24, device='cuda:0'), 32], [0.28990858793258667, 0.27757492661476135, 0.0007920322823338211, 0.0013047527754679322, 0.0011008993024006486, 0.009136006236076355, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.13040637969970703, 0.1166771948337555, 0.0022190059535205364, 0.001541444449685514, 0.001358402892947197, 0.008610336109995842, tensor(12, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32], [0.19835738837718964, 0.1900932937860489, 0.0006248789140954614, 0.0005934970686212182, 0.0008586504845879972, 0.006187069695442915, tensor(11, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.10597129166126251, 0.09412793070077896, 0.0007116135093383491, 0.00039107180782593787, 0.0010245186276733875, 0.009716152213513851, tensor(7, device='cuda:0'), 7, tensor(29, device='cuda:0'), 32], [0.1252659410238266, 0.10991542041301727, 0.0004883434157818556, 0.0003389483317732811, 0.0006713957991451025, 0.013851835392415524, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.09631212055683136, 0.09159526228904724, 0.00020315735309850425, 0.00018691008153837174, 0.00042796862544491887, 0.0038988234009593725, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.29804766178131104, 0.29174157977104187, 0.0008241920149885118, 0.0006027472554706037, 0.0002552711812313646, 0.004623894579708576, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.48254072666168213, 0.4689842164516449, 0.0015255588805302978, 0.0019796532578766346, 0.0011652025859802961, 0.008886083960533142, tensor(10, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.03214934468269348, 0.026796884834766388, 0.00039126386400312185, 0.0007627682643942535, 0.0007253614021465182, 0.0034730685874819756, tensor(14, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32], [0.07835984975099564, 0.07610438764095306, 0.0002751195861492306, 0.000250074896030128, 0.00032775982981547713, 0.0014025119598954916, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.1445539891719818, 0.1401289403438568, 0.0004017571045551449, 0.0005035950453020632, 9.954719280358404e-05, 0.0034201631788164377, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.16866272687911987, 0.15979403257369995, 0.0008430202142335474, 0.0017538131214678288, 0.0005054405191913247, 0.005766428541392088, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.02732544019818306, 0.022801019251346588, 0.0003467494680080563, 0.0005706953816115856, 0.00028163642855361104, 0.003325340338051319, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.07919547706842422, 0.07738563418388367, 0.00021380414546001703, 0.00022562163940165192, 0.00034396935370750725, 0.001026450889185071, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32], [0.057880185544490814, 0.054322414100170135, 0.0002757712500169873, 0.0004010334378108382, 0.0007621754775755107, 0.0021187886595726013, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.021862559020519257, 0.01971583440899849, 0.00010695022501749918, 0.00016787495405878872, 0.0002274306316394359, 0.001644469448365271, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.06074332445859909, 0.057910483330488205, 0.00022889237152412534, 0.0002852176839951426, 0.00021512397506739944, 0.0021036050748080015, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32], [0.08124042302370071, 0.07662836462259293, 0.0004139493394177407, 0.000932506169192493, 0.00024049558851402253, 0.003025104757398367, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.07132641226053238, 0.06648559123277664, 0.0007590952445752919, 0.0010266921017318964, 0.0008139795972965658, 0.002241062466055155, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.11596906930208206, 0.1101631373167038, 0.001010715845040977, 0.0006898172432556748, 0.00035421084612607956, 0.0037511875852942467, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.27182841300964355, 0.2702450454235077, 0.0002630040980875492, 0.000238387641729787, 0.0001699639979051426, 0.0009120178292505443, tensor(10, device='cuda:0'), 11, tensor(29, device='cuda:0'), 32], [0.03685818985104561, 0.035934388637542725, 0.00011168129276484251, 7.655974332010373e-05, 9.65557701420039e-05, 0.0006390050984919071, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.03904452174901962, 0.0369623526930809, 0.0004083399544470012, 0.0004242079157847911, 0.00035955096245743334, 0.0008900737157091498, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.2676754891872406, 0.26531895995140076, 0.0001880656200228259, 0.0004029968404211104, 0.0007960202638059855, 0.0009694570326246321, tensor(12, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32], [0.05168529972434044, 0.046032845973968506, 0.0003058897564187646, 0.0012125519569963217, 0.001784072257578373, 0.0023499394301325083, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.40566757321357727, 0.3990732729434967, 0.0003575771988835186, 0.0024227744434028864, 0.001558752148412168, 0.00225520390085876, tensor(10, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.1379755437374115, 0.13625772297382355, 0.00039213980198837817, 0.00047866409295238554, 0.0004162613768130541, 0.000430751359090209, tensor(11, device='cuda:0'), 11, tensor(29, device='cuda:0'), 32], [0.042145736515522, 0.04096941277384758, 0.00021355140779633075, 0.00028467713855206966, 0.00014956691302359104, 0.0005285291117615998, tensor(14, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32], [0.08147775381803513, 0.07902175933122635, 0.0004939503851346672, 0.0005820422666147351, 0.00043541056220419705, 0.0009445935138501227, tensor(13, device='cuda:0'), 13, tensor(29, device='cuda:0'), 32], [0.025402415543794632, 0.023430487141013145, 0.00021446309983730316, 0.00018302717944607139, 0.00039358632056973875, 0.0011808511335402727, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.05000248923897743, 0.046510644257068634, 0.00026825323584489524, 0.00019461980264168233, 0.0005590897053480148, 0.0024698800407350063, tensor(12, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.06880512088537216, 0.06557059288024902, 0.0004262463189661503, 0.0006346801528707147, 0.0011705518700182438, 0.0010030491976067424, tensor(10, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32], [0.2427903115749359, 0.23964469134807587, 0.00039720156928524375, 0.000937161676120013, 0.0003051552048418671, 0.0015060852747410536, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.20996156334877014, 0.20635218918323517, 0.00027523734024725854, 0.0015557557344436646, 0.0008162272861227393, 0.0009621456265449524, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.04415588453412056, 0.0416032038629055, 0.00030920299468562007, 0.000934332434553653, 0.00020384267554618418, 0.001105302246287465, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.2735719084739685, 0.2704683840274811, 0.0004757298738695681, 0.0004770898085553199, 0.0006322322296909988, 0.0015184767544269562, tensor(10, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.07742846757173538, 0.07465896010398865, 0.0003672371676657349, 0.00020635328837670386, 0.00023626041365787387, 0.0019596561323851347, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.17295150458812714, 0.17131009697914124, 0.00021629205730278045, 7.30710817151703e-05, 0.00012778420932590961, 0.0012242572847753763, tensor(13, device='cuda:0'), 13, tensor(30, device='cuda:0'), 32], [0.20850227773189545, 0.20622017979621887, 0.0001470127608627081, 0.0006040139705874026, 0.0003654811007436365, 0.001165581401437521, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.14680072665214539, 0.1435278356075287, 0.0007096007466316223, 0.0008317439933307469, 0.0004254535015206784, 0.001306097605265677, tensor(8, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32], [0.5461431741714478, 0.5395762324333191, 0.0007333067478612065, 0.0007851748378016055, 0.0006992220878601074, 0.004349246621131897, tensor(7, device='cuda:0'), 8, tensor(32, device='cuda:0'), 32], [0.21274639666080475, 0.20857971906661987, 0.0006851664511486888, 0.0012210248969495296, 0.0007290384965017438, 0.001531436457298696, tensor(11, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.043507665395736694, 0.041515108197927475, 0.00038577031227760017, 0.0001747499336488545, 0.0004950518487021327, 0.0009369890321977437, tensor(7, device='cuda:0'), 7, tensor(30, device='cuda:0'), 32], [0.05029134452342987, 0.04913053289055824, 0.0004160630633123219, 0.0003124852373730391, 0.00020692838006652892, 0.00022533458832185715, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.09554747492074966, 0.09330526739358902, 0.00017653280519880354, 0.0007781372987665236, 0.0003422581357881427, 0.0009452775702811778, tensor(7, device='cuda:0'), 7, tensor(29, device='cuda:0'), 32], [0.0332188755273819, 0.029980558902025223, 0.00045901909470558167, 0.0008139283745549619, 0.0003547737142071128, 0.0016105965478345752, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.0365249328315258, 0.0345577634871006, 0.0003644997486844659, 0.0002721445634961128, 0.0003141230554319918, 0.001016400521621108, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.19833673536777496, 0.1957693248987198, 0.0009528939845040441, 0.0006031167577020824, 0.0002691422123461962, 0.0007422605413012207, tensor(13, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32], [0.23548093438148499, 0.23368054628372192, 0.0004194627108518034, 0.0004159801756031811, 0.0005679689347743988, 0.00039696507155895233, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.11253421008586884, 0.10799835622310638, 0.0007511384319514036, 0.00025772288790903986, 0.0006959761958569288, 0.002831023186445236, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.10432687401771545, 0.09954964369535446, 0.0005334722809493542, 0.0021962083410471678, 0.0007615668582729995, 0.0012859879061579704, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.06994211673736572, 0.06699308007955551, 0.00013582139217760414, 0.000871319614816457, 0.0002626267960295081, 0.001679261215031147, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.16013410687446594, 0.15814729034900665, 0.00016845736536197364, 0.0001149853051174432, 0.00012925693590659648, 0.001574111171066761, tensor(11, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.9414315819740295, 0.937644898891449, 0.00023332645650953054, 0.0015366105362772942, 0.0011907281586900353, 0.0008260297472588718, tensor(9, device='cuda:0'), 11, tensor(29, device='cuda:0'), 32], [0.020099511370062828, 0.018271321430802345, 0.00030330097069963813, 0.0007048930856399238, 0.0003267670108471066, 0.0004932293086312711, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.0717194452881813, 0.0698741227388382, 0.00022579505457542837, 0.00022816334967501462, 0.0003892483073286712, 0.0010021139169111848, tensor(14, device='cuda:0'), 14, tensor(30, device='cuda:0'), 32], [0.18554866313934326, 0.18259644508361816, 9.643189696362242e-05, 0.00029653427191078663, 0.00050820701289922, 0.002051054732874036, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.29464560747146606, 0.29245781898498535, 2.5905221264110878e-05, 0.0007267477922141552, 0.0003214388561900705, 0.0011136876419186592, tensor(11, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32], [0.05112222954630852, 0.049818456172943115, 0.00020414571918081492, 0.0004347195499576628, 0.00027504374156706035, 0.0003898679278790951, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.06519053876399994, 0.0636938139796257, 0.00024031932116486132, 0.00043152220314368606, 0.0004457405302673578, 0.00037914482527412474, tensor(14, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32], [0.20391510426998138, 0.20312166213989258, 0.0001786259817890823, 0.0002220148453488946, 7.153942715376616e-05, 0.0003212754672858864, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.10216043144464493, 0.09730610251426697, 0.001090231817215681, 0.0013932124711573124, 0.00022841156169306487, 0.0021424766164273024, tensor(12, device='cuda:0'), 12, tensor(29, device='cuda:0'), 32], [0.033284302800893784, 0.03157523646950722, 0.0003684968687593937, 0.0001122606554417871, 0.00018214707961305976, 0.0010461574420332909, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.02389792539179325, 0.021515952423214912, 0.0004062569933012128, 0.0004416423325892538, 0.0004303799942135811, 0.0011036938522011042, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.035786405205726624, 0.03365978226065636, 0.00018061422451864928, 0.0007672477513551712, 0.0006160447373986244, 0.0005627204081974924, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.03384626284241676, 0.032407768070697784, 0.00010331972589483485, 0.0005269694374874234, 0.00031798373674973845, 0.000490223232191056, tensor(7, device='cuda:0'), 7, tensor(32, device='cuda:0'), 32], [0.10795070230960846, 0.10426352918148041, 0.0004573009500745684, 0.0008747138199396431, 0.0012285416014492512, 0.001126618473790586, tensor(9, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.04054578021168709, 0.03886805474758148, 0.0001966910349437967, 0.00023673995747230947, 0.0006714481860399246, 0.0005728502292186022, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.012123914435505867, 0.010952476412057877, 0.00030626513762399554, 9.373448847327381e-05, 0.00023048235743772238, 0.000540955166798085, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.4017806053161621, 0.3999572992324829, 0.0004106737324036658, 0.0003957230073865503, 0.00045270039117895067, 0.0005642048781737685, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.08396296948194504, 0.08230972290039062, 0.0003569125838112086, 0.0005804808461107314, 0.00024103009491227567, 0.000474820495583117, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.07336747646331787, 0.07015131413936615, 0.0006065141060389578, 0.0004629820177797228, 0.0007810446550138295, 0.0013656248338520527, tensor(8, device='cuda:0'), 9, tensor(31, device='cuda:0'), 32], [0.07681635022163391, 0.07432115077972412, 0.0010298345005139709, 0.0008012311882339418, 0.00027736660558730364, 0.0003867704945150763, tensor(13, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32], [0.09853676706552505, 0.09480368345975876, 0.00021561412722803652, 0.0006549512036144733, 0.0010937224142253399, 0.0017687997315078974, tensor(15, device='cuda:0'), 15, tensor(31, device='cuda:0'), 32], [0.04148547723889351, 0.04037170112133026, 0.0004394576826598495, 0.00010080145875690505, 0.00027281793882139027, 0.00030069658532738686, tensor(11, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.1438562572002411, 0.141953706741333, 0.000792666629422456, 0.0002839383378159255, 0.00023587531177327037, 0.000590076029766351, tensor(13, device='cuda:0'), 14, tensor(31, device='cuda:0'), 32], [0.07340696454048157, 0.07207832485437393, 0.00020009800209663808, 0.00022657125373370945, 0.00023798851179890335, 0.0006639829371124506, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.08231820911169052, 0.08055680990219116, 0.0003701512760017067, 0.00024152800324372947, 0.00020558290998451412, 0.0009441369329579175, tensor(9, device='cuda:0'), 9, tensor(30, device='cuda:0'), 32], [0.2509356141090393, 0.24687547981739044, 0.0008132838411256671, 0.0010015355655923486, 0.0008551072678528726, 0.0013902084901928902, tensor(12, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.02419111505150795, 0.02229267545044422, 0.0002081712445942685, 0.00010871993436012417, 0.00040333709330298007, 0.0011782102519646287, tensor(9, device='cuda:0'), 9, tensor(32, device='cuda:0'), 32], [0.07333610206842422, 0.07225131243467331, 0.0003525461652316153, 0.0001833192363847047, 0.0002496651723049581, 0.0002992636291310191, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.6371076107025146, 0.6341174840927124, 0.000456807145383209, 0.00048650745884515345, 0.0010725677711889148, 0.0009742530528455973, tensor(10, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.016206396743655205, 0.011764038354158401, 0.0010422657942399383, 0.0005512677598744631, 0.0012885084142908454, 0.0015603171195834875, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.14887689054012299, 0.14530599117279053, 0.0009277405915781856, 0.0004956558113917708, 0.0005083458381704986, 0.001639142050407827, tensor(11, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.04374055191874504, 0.04227648302912712, 0.00015499821165576577, 0.00013934540038462728, 0.0005591833614744246, 0.0006105412030592561, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.05305606499314308, 0.05012787878513336, 0.0004396364965941757, 0.00011577284021768719, 0.0005177075508981943, 0.0018550681415945292, tensor(10, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.031184911727905273, 0.02827322855591774, 0.0005278622847981751, 0.0001884635421447456, 0.0005115676904097199, 0.0016837886068969965, tensor(8, device='cuda:0'), 8, tensor(31, device='cuda:0'), 32], [0.03174721449613571, 0.027039458975195885, 0.0007086826954036951, 0.0004010368720628321, 0.0015122853219509125, 0.002085750689730048, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.043784692883491516, 0.03981173783540726, 0.0006509018712677062, 0.0006833120714873075, 0.0019474623259156942, 0.0006912797107361257, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.07686758041381836, 0.07461731880903244, 0.00032953437766991556, 0.0003013991517946124, 0.0002902367268688977, 0.0013290948700159788, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.03293498605489731, 0.031899552792310715, 0.00011243587505305186, 0.00016151773161254823, 0.0003699207736644894, 0.0003915571724064648, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.025385921820998192, 0.024115974083542824, 0.000573561352211982, 0.00016843967023305595, 0.00022410294332075864, 0.0003038457070942968, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.17433393001556396, 0.1711757481098175, 0.0008737827884033322, 0.0005225149798206985, 0.0005900778924115002, 0.0011718060122802854, tensor(9, device='cuda:0'), 10, tensor(30, device='cuda:0'), 32], [0.079888254404068, 0.07097585499286652, 0.001314585912041366, 0.002830763114616275, 0.0005009679589420557, 0.004266075789928436, tensor(13, device='cuda:0'), 13, tensor(31, device='cuda:0'), 32], [0.026829199865460396, 0.01982482150197029, 0.0008829400758258998, 0.00036674467264674604, 0.002584713278338313, 0.003169979900121689, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.05116214603185654, 0.038513608276844025, 0.000284144509350881, 0.00034610004513524473, 0.00693719694390893, 0.005081093870103359, tensor(14, device='cuda:0'), 15, tensor(32, device='cuda:0'), 32], [0.02211470529437065, 0.020257405936717987, 0.0004289752396289259, 0.00028535089222714305, 0.000749872880987823, 0.0003930999373551458, tensor(14, device='cuda:0'), 14, tensor(32, device='cuda:0'), 32], [0.13867101073265076, 0.13593275845050812, 0.0002982378064189106, 0.0008980771526694298, 0.00028806590125896037, 0.001253871014341712, tensor(9, device='cuda:0'), 10, tensor(31, device='cuda:0'), 32], [0.11337631940841675, 0.1086692288517952, 0.0001807758817449212, 0.00038830458652228117, 0.0018740086816251278, 0.0022640053648501635, tensor(11, device='cuda:0'), 12, tensor(31, device='cuda:0'), 32], [0.0253300741314888, 0.018218878656625748, 0.0007568210130557418, 0.0003960734175052494, 0.0039632320404052734, 0.0019950689747929573, tensor(12, device='cuda:0'), 12, tensor(32, device='cuda:0'), 32], [0.3813599944114685, 0.37628495693206787, 0.0010400237515568733, 0.00025213207118213177, 0.001768650021404028, 0.002014253055676818, tensor(9, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.17618662118911743, 0.16959932446479797, 0.0004946452099829912, 0.0007449922850355506, 0.002840433269739151, 0.002507223282009363, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.08120895177125931, 0.07736682146787643, 0.00025242750416509807, 0.0010778441792353988, 0.0005169506184756756, 0.0019949052948504686, tensor(10, device='cuda:0'), 11, tensor(32, device='cuda:0'), 32], [0.02252507582306862, 0.020207341760396957, 0.0002686663356143981, 0.00029115271172486246, 0.000485169148305431, 0.0012727475259453058, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.08793695271015167, 0.08421596139669418, 0.0013145186239853501, 0.0005302319186739624, 0.0008426861604675651, 0.0010335486149415374, tensor(10, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.03285183012485504, 0.02849249541759491, 0.00042446862789802253, 0.0007649945910088718, 0.001275883987545967, 0.00189398811198771, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.020263032987713814, 0.013445104472339153, 0.0008353806915692985, 0.0004632016643881798, 0.0025011994875967503, 0.0030181461479514837, tensor(10, device='cuda:0'), 10, tensor(32, device='cuda:0'), 32], [0.08554871380329132, 0.0817597508430481, 0.0002375496260356158, 0.0006193929584696889, 0.0010898626642301679, 0.001842157798819244, tensor(11, device='cuda:0'), 11, tensor(31, device='cuda:0'), 32], [0.016200782731175423, 0.014759414829313755, 0.0004490591527428478, 0.00023148312175180763, 0.00025668670423328876, 0.0005041382391937077, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.038992755115032196, 0.03620415925979614, 0.00013613591727335006, 0.00037593848537653685, 0.0005939887487329543, 0.0016825294587761164, tensor(13, device='cuda:0'), 13, tensor(32, device='cuda:0'), 32], [0.08697172999382019, 0.08402363955974579, 0.0002596025005914271, 0.0003124450449831784, 0.000455642060842365, 0.0019204035634174943, tensor(8, device='cuda:0'), 8, tensor(31, device='cuda:0'), 32], [0.04080754891037941, 0.03751246631145477, 9.740167297422886e-05, 0.0004066573455929756, 0.0012569777900353074, 0.0015340468380600214, tensor(11, device='cuda:0'), 11, tensor(30, device='cuda:0'), 32], [0.02093927189707756, 0.01693813130259514, 8.351101132575423e-05, 0.000927638029679656, 0.0020697033032774925, 0.000920287799090147, tensor(7, device='cuda:0'), 7, tensor(32, device='cuda:0'), 32], [0.12170768529176712, 0.11598963290452957, 0.00029421865474432707, 0.0014044393319636583, 0.0016601583920419216, 0.0023592347279191017, tensor(12, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.09955572336912155, 0.09737294912338257, 0.00010053608275484294, 0.0004499868373386562, 0.000504393654409796, 0.001127852825447917, tensor(11, device='cuda:0'), 12, tensor(30, device='cuda:0'), 32], [0.06950514763593674, 0.06836296617984772, 0.0001251612266059965, 0.0003092680708505213, 0.0003792110946960747, 0.00032854030723683536, tensor(8, device='cuda:0'), 8, tensor(23, device='cuda:0'), 24]]
