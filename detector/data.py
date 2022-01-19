@@ -115,9 +115,9 @@ class DataBowl3Detector(Dataset):
             pw = int(np.ceil(float(nw) / self.stride)) * self.stride
             imgs = np.pad(imgs, [[0,0],[0, pz - nz], [0, ph - nh], [0, pw - nw]], 'constant',constant_values = self.pad_value)
             
-            xx,yy,zz = np.meshgrid(np.linspace(-0.5,0.5,imgs.shape[1]/self.stride),
-                                   np.linspace(-0.5,0.5,imgs.shape[2]/self.stride),
-                                   np.linspace(-0.5,0.5,imgs.shape[3]/self.stride),indexing ='ij')
+            xx,yy,zz = np.meshgrid(np.linspace(-0.5,0.5,int(imgs.shape[1]/self.stride)),
+                                   np.linspace(-0.5,0.5,int(imgs.shape[2]/self.stride)),
+                                   np.linspace(-0.5,0.5,int(imgs.shape[3]/self.stride)),indexing ='ij')
             coord = np.concatenate([xx[np.newaxis,...], yy[np.newaxis,...],zz[np.newaxis,:]],0).astype('float32')
             imgs, nzhw = self.split_comber.split(imgs)
             coord2, nzhw2 = self.split_comber.split(coord,

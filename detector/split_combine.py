@@ -31,9 +31,10 @@ class SplitComb():
         self.nzhw = nzhw
         
         pad = [ [0, 0],
-                [margin, nz * side_len - z + margin],
-                [margin, nh * side_len - h + margin],
-                [margin, nw * side_len - w + margin]]
+                [int(margin), int(nz * side_len - z + margin)],
+                [int(margin), int(nh * side_len - h + margin)],
+                [int(margin), int(nw * side_len - w + margin)]]
+        # print(pad)
         data = np.pad(data, pad, 'edge')
 
         for iz in range(nz):
@@ -46,7 +47,7 @@ class SplitComb():
                     sw = iw * side_len
                     ew = (iw + 1) * side_len + 2 * margin
 
-                    split = data[np.newaxis, :, sz:ez, sh:eh, sw:ew]
+                    split = data[np.newaxis, :, int(sz):int(ez), int(sh):int(eh), int(sw):int(ew)]
                     splits.append(split)
 
         splits = np.concatenate(splits, 0)
@@ -60,7 +61,7 @@ class SplitComb():
             stride = self.stride
         if margin == None:
             margin = self.margin
-        if nzhw==None:
+        if (nzhw==None).all():
             nz = self.nz
             nh = self.nh
             nw = self.nw
@@ -76,11 +77,11 @@ class SplitComb():
             splits.append(output[i])
 
         output = -1000000 * np.ones((
-            nz * side_len,
-            nh * side_len,
-            nw * side_len,
-            splits[0].shape[3],
-            splits[0].shape[4]), np.float32)
+            int(nz * side_len),
+            int(nh * side_len),
+            int(nw * side_len),
+            int(splits[0].shape[3]),
+            int(splits[0].shape[4])), np.float32)
 
         idx = 0
         for iz in range(nz):
@@ -93,8 +94,10 @@ class SplitComb():
                     sw = iw * side_len
                     ew = (iw + 1) * side_len
 
+                    margin = int(margin)
+                    side_len = int(side_len)
                     split = splits[idx][margin:margin + side_len, margin:margin + side_len, margin:margin + side_len]
-                    output[sz:ez, sh:eh, sw:ew] = split
+                    output[int(sz):int(ez), int(sh):int(eh), int(sw):int(ew)] = split
                     idx += 1
 
         return output 

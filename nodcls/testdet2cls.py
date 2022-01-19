@@ -2,13 +2,31 @@ import numpy as np
 import pandas as pd
 import os
 import os.path
-fold = 5#5#4#5#4#5#4#5#4#1#5#4#5#1#2#1 3 4  5 
-ep = 38#38#143#38#17#97#17#97#21#78#17#78#21#20#21 39 17 38
+fold = 9#5#4#5#4#5#4#5#4#1#5#4#5#1#2#1 3 4  5 
+# ep = 38#38#143#38#17#97#17#97#21#78#17#78#21#20#21 39 17 38
 # dep = -3
-detp = -3#-2#-2
+# detp = -3#-2#-2
+
+
+
+ep = 150
+# detp = -1#-2#-2
+detp = -2#-2#-2
 savemodelpath = './detcls-'+str(fold)+'/'
-epb = 0#50
-epe = 105#130#105
+# epb = 0#50
+# epe = 105#130#105
+epb = 149
+epe = 150
+
+##############################
+pbbpth = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/val'+str(ep)+'/'
+annotationdetclsconvfnl_v3 = '/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/annotationdetclsconvfnl_v3.csv'
+tedetpath = f'/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft969/val150/predanno{detp}d3.csv'
+preprocesspath = '/data/yangqinzhu/ctLung/luna16/cls/crop_v3/'
+preprocessallpath = '/data/yangqinzhu/ctLung/luna16/preprocess/lunaall/'
+
+##############################
+
 def iou(box0, box1):
     r0 = box0[3] / 2
     s0 = box0[:3] - r0
@@ -37,7 +55,10 @@ def nms(output, nms_th):
     return bboxes
 # find the mapping
 # load groundtruth
-antclscsv = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+# antclscsv = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+#     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
+
+antclscsv = pd.read_csv(annotationdetclsconvfnl_v3, \
     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = antclscsv['seriesuid'].tolist()[1:]
 cdxlst = antclscsv['coordX'].tolist()[1:]
@@ -46,12 +67,12 @@ cdzlst = antclscsv['coordZ'].tolist()[1:]
 dimlst = antclscsv['diameter_mm'].tolist()[1:]
 mlglst = antclscsv['malignant'].tolist()[1:]
 gtdct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     vlu = [float(cdxlst[idx]), float(cdylst[idx]), float(cdzlst[idx]), float(dimlst[idx]), int(mlglst[idx])]
     if srslst[idx].split('-')[0] not in gtdct: gtdct[srslst[idx].split('-')[0]] = [vlu]
     else: gtdct[srslst[idx].split('-')[0]].append(vlu)
 
-tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/val'+str(ep)+'/predanno'+str(detp)+'.csv'
+# tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/val'+str(ep)+'/predanno'+str(detp)+'.csv'
 # fid = open(tedetpath, 'r')
 prdcsv = pd.read_csv(tedetpath, names=['seriesuid','coordX','coordY','coordZ','probability'])
 srslst = prdcsv['seriesuid'].tolist()[1:]
@@ -61,14 +82,14 @@ cdzlst = prdcsv['coordZ'].tolist()[1:]
 prblst = prdcsv['probability'].tolist()[1:]
 # build dict first for rach seriesuid
 srsdct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     vlu = [cdxlst[idx], cdylst[idx], cdzlst[idx], prblst[idx]]
     if srslst[idx] not in srsdct: srsdct[srslst[idx]] = [vlu]
     else: srsdct[srslst[idx]].append(vlu)
 # pbb path, find the mapping of csv to pbb
-pbbpth = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/val'+str(ep)+'/'
-rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
-prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+
+# rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
+# prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
 trudat = {}
 tefnmlst = []
 tecdxlst = []
@@ -92,7 +113,7 @@ for srs, vlu in srsdct.iteritems():
     assert pbb.shape[0] == len(vlu)
     kptpbb = np.array(pbb[:5, :]) # prob, x, y, z, d # 5: first version for all; 
     # find the true label
-    for idx in xrange(kptpbb.shape[0]):
+    for idx in range(kptpbb.shape[0]):
         tefnmlst.append(srs)
         tecdxlst.append(kptpbb[idx, 1])
         tecdylst.append(kptpbb[idx, 2])
@@ -208,7 +229,8 @@ import argparse
 # from torch.autograd import Variable
 import numpy as np
 # criterion = nn.CrossEntropyLoss()
-CROPSIZE = 17
+# CROPSIZE = 17
+CROPSIZE = 32
 blklst = []
 # blklst = ['1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-388', \
 #     '1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-389', \
@@ -223,8 +245,8 @@ best_acc = 0  # best test accuracy
 best_acc_gbt = 0
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 # Cal mean std
-preprocesspath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
-preprocessallpath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+# preprocesspath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
+# preprocessallpath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
 pixvlu, npix = 0, 0
 for fname in os.listdir(preprocesspath):
     if fname.endswith('.npy'):
@@ -464,6 +486,8 @@ idx = 0
 #     idx += len(targets)
 print(testlabel.shape, len(testnodmask))#, testfeat.shape, testlabel)#, trainfeat[:, 3])
 import numpy as np 
+# ptlabeldct = np.load('/media/data1/wentao/tianchi/luna16/CSVFILES/ptlabel'+str(fold)+'.npy').item()
+# dctptlabel = np.load('/media/data1/wentao/tianchi/luna16/CSVFILES/dctptlabel'+str(fold)+'.npy').item()
 ptlabeldct = np.load('/media/data1/wentao/tianchi/luna16/CSVFILES/ptlabel'+str(fold)+'.npy').item()
 dctptlabel = np.load('/media/data1/wentao/tianchi/luna16/CSVFILES/dctptlabel'+str(fold)+'.npy').item()
 acc1 = []
@@ -480,7 +504,7 @@ bestkappavlu = [[0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0]]
 bestkappanod = 0
 bestkappavlunod = [0,0,0,0]
 testlabel = np.asarray(telabellst)
-for ep in xrange(epb,epe,1):#55,56,1):#0,105,1):#50):
+for ep in range(epb,epe,1):#55,56,1):#0,105,1):#50):
     for predtype in [0]:#,1]:
         ncorrect = [0]*4
         nct = [0]*4
@@ -501,7 +525,7 @@ for ep in xrange(epb,epe,1):#55,56,1):#0,105,1):#50):
         ng = 0
         tp = 0
         tn = 0
-        for idx in xrange(predlabel.shape[0]):
+        for idx in range(predlabel.shape[0]):
             if testnodmask[idx] == 0: continue
             if abs(testlabel[idx] - 1) < 1e-2:
                 np += 1
@@ -531,14 +555,14 @@ for ep in xrange(epb,epe,1):#55,56,1):#0,105,1):#50):
         # patient level
         np = ng = tp = tn = 0
         ptlabel = {}
-        for idx in xrange(len(tesrslst)):
+        for idx in range(len(tesrslst)):
             # if testnodmask[idx] == 0: continue
             if tesrslst[idx] not in ptlabel: ptlabel[tesrslst[idx]] = testlabel[idx]
             elif testlabel[idx] == 1:
                 ptlabel[tesrslst[idx]] = 1
         # print(len(ptlabel.keys()), sum(ptlabel.values()))
         prddct = {}
-        for idx in xrange(predlabel.shape[0]):
+        for idx in range(predlabel.shape[0]):
             # if testnodmask[idx] == 0: continue
             if tesrslst[idx] not in prddct: prddct[tesrslst[idx]] = predlabel[idx]
             elif predlabel[idx] == 1:
@@ -608,7 +632,7 @@ for ep in xrange(epb,epe,1):#55,56,1):#0,105,1):#50):
         acc3.append(ncorrect[2]/nct[2])
         acc4.append(ncorrect[3]/nct[3])
 
-        for d in xrange(4):
+        for d in range(4):
             pp, nn, pn, npp = kappavlu[d][0], kappavlu[d][1], kappavlu[d][2], kappavlu[d][3]
             n = pp + nn + pn + npp
             p0 = (pp + nn) / float(n)

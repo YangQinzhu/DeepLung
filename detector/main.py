@@ -52,7 +52,7 @@ parser.add_argument('--split', default=8, type=int, metavar='SPLIT',
                     help='In the test phase, split the image to 8 parts')
 parser.add_argument('--gpu', default='all', type=str, metavar='N',
                     help='use gpu')
-parser.add_argument('--n_test', default=4, type=int, metavar='N',
+parser.add_argument('--n_test', default=1, type=int, metavar='N',
                     help='number of gpu for test')
 
 def main():
@@ -60,6 +60,7 @@ def main():
     args = parser.parse_args()
     config_training = import_module(args.config)
     config_training = config_training.config
+    print('args.config', args.config)
     # from config_training import config as config_training
     torch.manual_seed(0)
     torch.cuda.set_device(0)
@@ -117,6 +118,7 @@ def main():
             if f.endswith('.mhd') and f[:-4] not in config_training['black_list']:
                 valfilelist.append(folder.split('/')[-2]+'/'+f[:-4])
     testfilelist = []
+    print('config_training[test_data_path]', config_training['test_data_path'])
     for folder in config_training['test_data_path']:
         for f in os.listdir(folder):
             if f.endswith('.mhd') and f[:-4] not in config_training['black_list']:
@@ -127,6 +129,9 @@ def main():
         sidelen = 144
         import data
         split_comber = SplitComb(sidelen,config['max_stride'],config['stride'],margin,config['pad_value'])
+        
+        # print('testfilelist', len())
+        print('testdatadir', testdatadir)
         dataset = data.DataBowl3Detector(
             testdatadir,
             testfilelist,
@@ -327,7 +332,7 @@ def test(data_loader, net, get_pbb, save_dir, config):
     save_dir = os.path.join(save_dir,'bbox')
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    print(save_dir)
+    print('save_dir', save_dir)
     net.eval()
     namelist = []
     split_comber = data_loader.dataset.split_comber
@@ -345,7 +350,7 @@ def test(data_loader, net, get_pbb, save_dir, config):
                 isfeat = True
         n_per_run = args.n_test
         # print(data.size())
-        splitlist = range(0,len(data)+1,n_per_run)
+        splitlist = [splitlist_i for splitlist_i in range(0,len(data)+1,n_per_run)]
         if splitlist[-1]!=len(data):
             splitlist.append(len(data))
         outputlist = []
@@ -357,12 +362,12 @@ def test(data_loader, net, get_pbb, save_dir, config):
                 # inputcoord = Variable(coord[splitlist[i]:splitlist[i+1]], volatile = True).cuda()
                 inputcoord = coord[splitlist[i]:splitlist[i+1]].cuda()
                 
-            if isfeat:
-                output,feature = net(input,inputcoord)
-                featurelist.append(feature.data.cpu().numpy())
-            else:
-                output = net(input,inputcoord)
-            outputlist.append(output.data.cpu().numpy())
+                if isfeat:
+                    output,feature = net(input,inputcoord)
+                    featurelist.append(feature.data.cpu().numpy())
+                else:
+                    output = net(input,inputcoord)
+                outputlist.append(output.data.cpu().numpy())
         output = np.concatenate(outputlist,0)
         output = split_comber.combine(output,nzhw=nzhw)
         if isfeat:
@@ -371,7 +376,7 @@ def test(data_loader, net, get_pbb, save_dir, config):
 
         thresh = args.testthresh # -8 #-3
         print('pbb thresh', thresh)
-        pbb,mask = get_pbb(output,thresh,ismask=True)
+        pbb,mask = get_pbb(output,thresh,ismask=True)  # pbb: p概率, x, y, z, d直径
         if isfeat:
             feature_selected = feature[mask[0],mask[1],mask[2]]
             np.save(os.path.join(save_dir, name+'_feature.npy'), feature_selected)
@@ -379,7 +384,7 @@ def test(data_loader, net, get_pbb, save_dir, config):
         #print([len(tp),len(fp),len(fn)])
         print([i_name,name])
         e = time.time()
-        np.save(os.path.join(save_dir, name+'_pbb.npy'), pbb)
+        np.save(os.path.join(save_dir, name+'_pbb.npy'), pbb) # x y z, 直径 
         np.save(os.path.join(save_dir, name+'_lbb.npy'), lbb)
     np.save(os.path.join(save_dir, 'namelist.npy'), namelist)
     end_time = time.time()

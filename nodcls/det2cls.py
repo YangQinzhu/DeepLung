@@ -1,15 +1,34 @@
-import numpy as np
+[import numpy as np
 import pandas as pd
 import os
 import os.path
-fold = 4#1#4#3
-resep = 143#21#17#39
+# fold = 4#1#4#3
+# resep = 143#21#17#39
+fold = 9#1#4#3
+resep = 150#21#17#39
 gbtdepth = 2#3#2#3
 neptime = 0.3
 testdetp = -2
 traindetp = -2
+# testdetp = -1
+# traindetp = -1
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
-resmodelpath = './detcls-'+str(fold)+'-old/ckptgbt.t7'
+# resmodelpath = './detcls-'+str(fold)+'-old/ckptgbt.t7'
+
+##################################################
+resmodelpath = '/data/yangqinzhu/ctLung/DeepLung-master/checkpoint-9/ckpt.t7'
+annotationdetclsconvfnl_v3 = '/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/annotationdetclsconvfnl_v3.csv'
+
+# they need to be changed below
+# tedetpath_csv = f'/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft969/val150/predanno{traindetp}d3.csv'
+# pbbpth = '/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft96'+str(fold)+'/train'+str(resep)+'/'
+preprocesspath = '/data/yangqinzhu/ctLung/luna16/cls/crop_v3/'
+preprocessallpath = '/data/yangqinzhu/ctLung/luna16/preprocess/lunaall/'
+##################################################
+
+
+
+
 def iou(box0, box1):
     r0 = box0[3] / 2
     s0 = box0[:3] - r0
@@ -22,6 +41,7 @@ def iou(box0, box1):
     intersection = overlap[0] * overlap[1] * overlap[2]
     union = box0[3] * box0[3] * box0[3] + box1[3] * box1[3] * box1[3] - intersection
     return intersection / union
+
 def nms(output, nms_th):
     if len(output) == 0: return output
     output = output[np.argsort(-output[:, 0])]
@@ -38,7 +58,9 @@ def nms(output, nms_th):
     return bboxes
 # find the mapping
 # load groundtruth
-antclscsv = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+# antclscsv = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+#     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
+antclscsv = pd.read_csv(annotationdetclsconvfnl_v3, \
     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = antclscsv['seriesuid'].tolist()[1:]
 cdxlst = antclscsv['coordX'].tolist()[1:]
@@ -47,13 +69,17 @@ cdzlst = antclscsv['coordZ'].tolist()[1:]
 dimlst = antclscsv['diameter_mm'].tolist()[1:]
 mlglst = antclscsv['malignant'].tolist()[1:]
 gtdct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     vlu = [float(cdxlst[idx]), float(cdylst[idx]), float(cdzlst[idx]), float(dimlst[idx]), int(mlglst[idx])]
     if srslst[idx].split('-')[0] not in gtdct: gtdct[srslst[idx].split('-')[0]] = [vlu]
     else: gtdct[srslst[idx].split('-')[0]].append(vlu)
 
-tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)\
-  +'/val'+str(resep)+'/predanno'+str(testdetp)+'.csv'
+# tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)\
+#   +'/val'+str(resep)+'/predanno'+str(testdetp)+'.csv'
+tedetpath = '/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft96'+str(fold)\
+  +'/val'+str(resep)+'/predanno'+str(testdetp)+'d3.csv'
+# tedetpath = f'/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft969/val150/predanno{traindetp}d3.csv'
+# tedetpath = tedetpath_csv
 # fid = open(tedetpath, 'r')
 prdcsv = pd.read_csv(tedetpath, names=['seriesuid','coordX','coordY','coordZ','probability'])
 srslst = prdcsv['seriesuid'].tolist()[1:]
@@ -63,14 +89,16 @@ cdzlst = prdcsv['coordZ'].tolist()[1:]
 prblst = prdcsv['probability'].tolist()[1:]
 # build dict first for rach seriesuid
 srsdct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     vlu = [cdxlst[idx], cdylst[idx], cdzlst[idx], prblst[idx]]
-    if srslst[idx] not in srsdct: srsdct[srslst[idx]] = [vlu]
-    else: srsdct[srslst[idx]].append(vlu)
+    if srslst[idx] not in srsdct: 
+        srsdct[srslst[idx]] = [vlu]
+    else: 
+        srsdct[srslst[idx]].append(vlu)
 # pbb path, find the mapping of csv to pbb
-pbbpth = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/val'+str(resep)+'/'
-rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
-prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+pbbpth = '/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft96'+str(fold)+'/val'+str(resep)+'/'
+# rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
+# prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
 trudat = {}
 tefnmlst = []
 tecdxlst = []
@@ -79,7 +107,7 @@ tecdzlst = []
 telablst = []
 tedimlst = []
 import math
-for srs, vlu in srsdct.iteritems():
+for srs, vlu in srsdct.items():
     pbb = np.load(os.path.join(pbbpth, srs+'_pbb.npy'))
     lbb = np.load(os.path.join(pbbpth, srs+'_lbb.npy')) # list, x y z d
     # sliceim,origin,spacing,isflip = load_itk_image(os.path.join(rawpth, srslst[idx]+'.mhd'))
@@ -88,12 +116,13 @@ for srs, vlu in srsdct.iteritems():
  #    resolution = np.array([1, 1, 1])
  #    extendbox = np.load(os.path.join(prppth, srslst[idx]+'_extendbox.npy'))
     pbbold = np.array(pbb[pbb[:,0] > testdetp])#detp])
+    # print('pbbold', pbbold, pbbold.shape)
     pbb = nms(pbbold, 0.1)
-    # print pbb.shape, len(vlu)
+    # print('pbb.shape, len(vlu)', pbb.shape, len(vlu))
     assert pbb.shape[0] == len(vlu)
     kptpbb = np.array(pbb)#[:5, :]) # prob, x, y, z, d
     # find the true label
-    for idx in xrange(kptpbb.shape[0]):
+    for idx in range(kptpbb.shape[0]):
         tefnmlst.append(srs)
         tecdxlst.append(kptpbb[idx, 1])
         tecdylst.append(kptpbb[idx, 2])
@@ -118,8 +147,12 @@ for srs, vlu in srsdct.iteritems():
         trudat[srs] = kptpbb
 print(len(telablst), sum(telablst), np.sum(kptpbb[:,0]))
 # load train data
-tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+\
-  '/train'+str(resep)+'/predanno'+str(traindetp)+'.csv'
+# tedetpath = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+\
+#   '/train'+str(resep)+'/predanno'+str(traindetp)+'.csv'
+tedetpath = '/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft96'+str(fold)+\
+  '/train'+str(resep)+'/predanno'+str(traindetp)+'d3.csv'
+# tedetpath = f'/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft969/train150/predanno{traindetp}d3.csv'
+# tedetpath = tedetpath_csv
 # fid = open(tedetpath, 'r')
 prdcsv = pd.read_csv(tedetpath, names=['seriesuid','coordX','coordY','coordZ','probability'])
 srslst = prdcsv['seriesuid'].tolist()[1:]
@@ -129,14 +162,16 @@ cdzlst = prdcsv['coordZ'].tolist()[1:]
 prblst = prdcsv['probability'].tolist()[1:]
 # build dict first for rach seriesuid
 srsdct = {}
-for idx in xrange(len(srslst)):
+for idx in range(len(srslst)):
     vlu = [cdxlst[idx], cdylst[idx], cdzlst[idx], prblst[idx]]
-    if srslst[idx] not in srsdct: srsdct[srslst[idx]] = [vlu]
-    else: srsdct[srslst[idx]].append(vlu)
+    if srslst[idx] not in srsdct: 
+        srsdct[srslst[idx]] = [vlu]
+    else: 
+        srsdct[srslst[idx]].append(vlu)
 # pbb path, find the mapping of csv to pbb
-pbbpth = '/media/data1/wentao/CTnoddetector/training/detector/results/res18/ft96'+str(fold)+'/train'+str(resep)+'/'
-rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
-prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+pbbpth = '/data/yangqinzhu/ctLung/DeepLung-master/detector/results/res18/retrft96'+str(fold)+'/train'+str(resep)+'/'
+# rawpth = '/media/data1/wentao/tianchi/luna16/lunaall/'
+# prppth = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
 trudat = {}
 trfnmlst = []
 trcdxlst = []
@@ -145,7 +180,7 @@ trcdzlst = []
 trlablst = []
 trdimlst = []
 import math
-for srs, vlu in srsdct.iteritems():
+for srs, vlu in srsdct.items():
     pbb = np.load(os.path.join(pbbpth, srs+'_pbb.npy'))
     lbb = np.load(os.path.join(pbbpth, srs+'_lbb.npy')) # list, x y z d
     # sliceim,origin,spacing,isflip = load_itk_image(os.path.join(rawpth, srslst[idx]+'.mhd'))
@@ -159,7 +194,7 @@ for srs, vlu in srsdct.iteritems():
     assert pbb.shape[0] == len(vlu)
     kptpbb = np.array(pbb)#pbb[:5, :]) # prob, x, y, z, d # :5 is the first version
     # find the true label
-    for idx in xrange(kptpbb.shape[0]):
+    for idx in range(kptpbb.shape[0]):
         trfnmlst.append(srs)
         trcdxlst.append(kptpbb[idx, 1])
         trcdylst.append(kptpbb[idx, 2])
@@ -202,12 +237,12 @@ import torchvision
 import transforms as transforms
 import os
 import argparse
-from models import *
+from models import dpn3d
 from utils import progress_bar
 from torch.autograd import Variable
 import numpy as np
 criterion = nn.CrossEntropyLoss()
-CROPSIZE = 17
+CROPSIZE = 32
 blklst = []
 # blklst = ['1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-388', \
 #     '1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-389', \
@@ -222,8 +257,8 @@ best_acc = 0  # best test accuracy
 best_acc_gbt = 0
 # start_epoch = 50  # start from epoch 0 or last checkpoint epoch
 # Cal mean std
-preprocesspath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
-preprocessallpath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
+# preprocesspath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
+# preprocessallpath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'
 pixvlu, npix = 0, 0
 for fname in os.listdir(preprocesspath):
     if fname.endswith('.npy'):
@@ -240,7 +275,7 @@ for fname in os.listdir(preprocesspath):
         pixvlu += np.sum(data * data)
 pixstd = np.sqrt(pixvlu / float(npix))
 # pixstd /= 255
-print(pixmean, pixstd)
+print('pixmean, pixstd', pixmean, pixstd)
 print('mean '+str(pixmean)+' std '+str(pixstd))
 # Datatransforms
 print('==> Preparing data..') # Random Crop, Zero out, x z flip, scale, 
@@ -305,7 +340,8 @@ for srsid, label, x, y, z, d in zip(tefnmlst, telablst, tecdxlst, tecdylst, tecd
     tefnamelst.append(data1)
     telabellst.append(int(label))
     tefeatlst.append(feat)
-print(len(telabellst), sum(telabellst))
+print('len(telabellst), sum(telabellst)', len(telabellst), sum(telabellst))
+
 for srsid, label, x, y, z, d in zip(trfnmlst, trlablst, trcdxlst, trcdylst, trcdzlst, trdimlst):
     mxx = max(abs(float(x)), mxx)
     mxy = max(abs(float(y)), mxy)
@@ -338,16 +374,17 @@ for srsid, label, x, y, z, d in zip(trfnmlst, trlablst, trcdxlst, trcdylst, trcd
     trlabellst.append(int(label))
     trfeatlst.append(feat)
 print(len(trlabellst), sum(trlabellst))
-for idx in xrange(len(trfeatlst)):
+for idx in range(len(trfeatlst)):
     # trfeatlst[idx][0] /= mxx
     # trfeatlst[idx][1] /= mxy
     # trfeatlst[idx][2] /= mxz
     trfeatlst[idx][-1] /= mxd
-for idx in xrange(len(tefeatlst)):
+for idx in range(len(tefeatlst)):
     # tefeatlst[idx][0] /= mxx
     # tefeatlst[idx][1] /= mxy
     # tefeatlst[idx][2] /= mxz
     tefeatlst[idx][-1] /= mxd
+    
 # trainset = lunanod(trfnamelst, trlabellst, trfeatlst, train=False, transform=transform_test)
 # trainloader = torch.utils.data.DataLoader(trainset, batch_size=1, shuffle=False, num_workers=30)
 print(len(tefnamelst), sum(telablst), len(trfnamelst), sum(trlablst))
@@ -357,7 +394,7 @@ testset = lunanod(preprocessallpath, tefnamelst, telabellst, tefeatlst, train=Fa
 testloader = torch.utils.data.DataLoader(testset, batch_size=16, shuffle=False, num_workers=30)
 checkpoint = torch.load(resmodelpath)#'./checkpoint-1-45/ckpt.t7')
 print(checkpoint.keys())
-net = DPN92_3D()
+net = dpn3d.DPN92_3D()
 net = checkpoint['net']
 # neptime = 0.2
 def get_lr(epoch):
@@ -372,6 +409,7 @@ if use_cuda:
     net.cuda()
     net = torch.nn.DataParallel(net, device_ids=range(torch.cuda.device_count()))
     cudnn.benchmark = False #True
+    
 import pickle
 from sklearn.ensemble import GradientBoostingClassifier as gbt
 criterion = nn.CrossEntropyLoss()
@@ -404,7 +442,7 @@ def train(epoch):
         # print(torch.stack(targets).data.numpy().shape, torch.stack(feat).data.numpy().shape)
         # print((dfeat.data).cpu().numpy().shape)
         trainfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
-        for i in xrange(len(targets)):
+        for i in range(len(targets)):
             trainfeat[idx+i, 2560:] = np.array((Variable(feat[i]).data).cpu().numpy())
             trainlabel[idx+i] = np.array((targets[i].data).cpu().numpy())
         idx += len(targets)
@@ -412,7 +450,7 @@ def train(epoch):
         loss = criterion(outputs, targets)
         loss.backward()
         optimizer.step()
-        train_loss += loss.data[0]
+        train_loss += loss.item()
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
@@ -439,18 +477,19 @@ def test(epoch, m):
     for batch_idx, (inputs, targets, feat) in enumerate(testloader):
         if use_cuda:
             inputs, targets = inputs.cuda(), targets.cuda()
-        inputs, targets = Variable(inputs, volatile=True), Variable(targets)
-        outputs, dfeat = net(inputs)
-        # add feature into the array
-        testfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
-        loss = criterion(outputs, targets)
-        test_loss += loss.data[0]
-        _, predicted = torch.max(outputs.data, 1)
+        with torch.no_grad():
+            inputs, targets = Variable(inputs), Variable(targets)
+            outputs, dfeat = net(inputs)
+            # add feature into the array
+            testfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
+            loss = criterion(outputs, targets)
+            test_loss += loss.item()
+            _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
         progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
             % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
-        for i in xrange(len(targets)):
+        for i in range(len(targets)):
             testfeat[idx+i, 2560:] = np.array((Variable(feat[i]).data).cpu().numpy())
             testlabel[idx+i] = np.array((targets[i].data).cpu().numpy())
             dpnpred[idx+i] = np.array((Variable(predicted[i]).data).cpu().numpy())
@@ -503,4 +542,4 @@ def test(epoch, m):
 
 for epoch in range(start_epoch, int(start_epoch+350*neptime)):#200):
     m = train(epoch)
-    test(epoch, m)
+    test(epoch, m)]

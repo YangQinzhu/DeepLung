@@ -136,7 +136,7 @@ def computeFROC(FROCGTList, FROCProbList, totalNumberOfImages, excludeList):
     totalNumberOfCandidates = len(FROCProbList_local)
     fpr, tpr, thresholds = skl_metrics.roc_curve(FROCGTList_local, FROCProbList_local)
     if sum(FROCGTList) == len(FROCGTList): # Handle border case when there are no false positives and ROC analysis give nan values.
-      print "WARNING, this system has no false positives.."
+      print("WARNING, this system has no false positives..")
       fps = np.zeros(len(fpr))
     else:
       fps = fpr * (totalNumberOfCandidates - numberOfDetectedLesions) / totalNumberOfImages

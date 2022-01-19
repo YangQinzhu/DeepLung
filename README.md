@@ -31,6 +31,11 @@ sh run_training.sh
 2. run `./nodcls/data/extclsshpinfo.py`
 3. run `/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/dataconverter.py` to get file `annotationdetclsconv_v3.csv`
 4. run `/data/yangqinzhu/ctLung/DeepLung-master/nodcls/data/nodclsgbt.py` to generate folder `/luna16/cls/crop_v3/`
-5. run `main_nodcls.py`
+
+## Train
+1. run `main_nodcls.py` to train the based classify model.(`/data/yangqinzhu/ctLung/DeepLung-master/checkpoint-9/ckpt.t7`)
+2. run `bash run_test_getTrainData.sh` to get pbb train data before runing file `det2cls.py`.
+3. run `det2cls.py` to train classify.
+4. run `testdet2cls.py`.
 
 ___you can change the path as you need, I have listed them it front of the function in each python file___
