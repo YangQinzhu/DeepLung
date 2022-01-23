@@ -18,7 +18,7 @@ from utils import progress_bar
 from torch.autograd import Variable
 import logging
 import numpy as np
-CROPSIZE = 17
+CROPSIZE = 32
 gbtdepth = 1
 fold = 9
 
@@ -250,8 +250,10 @@ def test(epoch, m):
     for batch_idx, (inputs, targets, feat) in enumerate(testloader):
         if use_cuda:
             inputs, targets = inputs.cuda(), targets.cuda()
-        inputs, targets = Variable(inputs, volatile=True), Variable(targets)
-        outputs, dfeat = net(inputs)
+        # inputs, targets = Variable(inputs, volatile=True), Variable(targets)
+        
+        with torch.no_grad():
+            outputs, dfeat = net(inputs)
         # add feature into the array
         testfeat[idx:idx+len(targets), :2560] = np.array((dfeat.data).cpu().numpy())
         for i in range(len(targets)):
